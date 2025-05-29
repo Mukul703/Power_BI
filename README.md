@@ -6,5 +6,7 @@
 ## Objective
 Analyzing sales data to identify top/bottom products, analyze trends, compare performance, and calculate various metrics. 
 
+## Key Insights
+
 ## Report
 Power BI report available in the repository.
