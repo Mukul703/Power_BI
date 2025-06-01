@@ -11,6 +11,11 @@ To build an interactive power BI report using a Loan Default Dataset, aimed at i
 - Cleaned and transformed data using Power Query Editor (data types, column renaming, profiling).
 ## DAX measures for key business metrics
   - Average Income by Employment Type (DAX used : CALCULATE modifies the filter context to apply custom conditions, AVERAGEX computes the average over a table      expression, and ALLEXCEPT removes all filters except the specified column to maintain group-level context.)
+```dax
+Avg Income By Emp type = 
+CALCULATE(AVERAGE('Loan Dataset'[Income]),
+ALLEXCEPT('Loan Dataset','Loan Dataset'[EmploymentType]))
+```
   - Default Rate by Employment Type using DIVIDE, COUNTROWS, ALL, and ALLEXCEPT.
 ```dax
 Default Rate = 
