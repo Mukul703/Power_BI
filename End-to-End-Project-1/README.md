@@ -18,7 +18,8 @@ DIVIDE(
     CALCULATE(COUNTROWS('LoanData'), 'LoanData'[LoanStatus] = "Default"),
     CALCULATE(COUNTROWS('LoanData')),
     0
-) 
+)
+``` 
   - Average Loan by Age Group using AVERAGEX and VALUES.
   - Median Loan Amount by Credit Score Category using MEDIAN.
 ## Implemented time intelligence
