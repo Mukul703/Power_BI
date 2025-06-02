@@ -30,7 +30,11 @@ DIVIDE(
     0
 )
 ``` 
-- Average Loan by Age Group using AVERAGEX and VALUES.
+- Avg Loan Amt (High Credit) : Calculates the average loan amount for entries where the credit score is categorized as "High".
+```
+Avg Loan Amt(High Credit) = 
+AVERAGEX(FILTER('Loan Dataset','Loan Dataset'[Credit Score Bins] = "High"),'Loan Dataset'[LoanAmount])
+```
 - Median Loan Amount by Credit Score Category using MEDIAN.
 ## Implemented time intelligence
 - YOY (Year-over-Year) percentage change in defaulted loans by comparing the current year's count of defaults to the previous year's, using CALCULATE, FILTER, and   DIVIDE to handle row context, date logic, and avoid divide-by-zero errors.
@@ -45,9 +49,9 @@ DIVIDE(
 CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date_DD_MM_YYYY].[Date]),ALLEXCEPT('Loan Dataset','Loan Dataset'[Credit Score Bins],'Loan Dataset'[MaritalStatus]))
 ```
 ## Visualization
+- Donut Chart : Visualizes the average loan amount for high creadit score customers segemnted by martial Status and age group.
 - Built a Decomposition Tree to break down Loan Amount by Income Bracket and Employment Type, allowing users to interactively drill down, explore key drivers, and   lock levels for structured insights.
   [View Decomposition-tree](images/Decomposition-tree.png)
-
 - 
 
 ## Key Insights
