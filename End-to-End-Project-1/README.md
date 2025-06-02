@@ -46,7 +46,7 @@ CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date_DD_M
 ```
 ## Visualization
 - Built a Decomposition Tree to break down Loan Amount by Income Bracket and Employment Type, allowing users to interactively drill down, explore key drivers, and   lock levels for structured insights.
-  ![Decomposition-tree](images/Decomposition-tree.png)
+  [View Decomposition-tree](images/Decomposition-tree.png)
 
 - 
 
