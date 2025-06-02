@@ -52,7 +52,7 @@ CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date_DD_M
 - Donut Chart : Visualizes the average loan amount for high creadit score customers segemnted by martial Status and age group.
   [View Donutchart](images/Donutchart.png)
 - Line Chart : Shows year-over-year change in loan defaults across different years.
-  [View Donutchart](images/Donutchart.png)
+  [View Linechart](images/Linechart.png)
 - Built a Decomposition Tree to break down Loan Amount by Income Bracket and Employment Type, allowing users to interactively drill down, explore key drivers, and   lock levels for structured insights.
   [View Decomposition-tree](images/Decomposition-tree.png)
 - 
