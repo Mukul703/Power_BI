@@ -43,11 +43,15 @@ DIVIDE(
 ```YTD Loan Amount By Credit Score Bins & Martial Status = 
 CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date_DD_MM_YYYY].[Date]),ALLEXCEPT('Loan Dataset','Loan Dataset'[Credit Score Bins],'Loan Dataset'[MaritalStatus]))
 ```
-## Visualization:
-- Performed data validation to ensure accuracy and consistency of key metrics and calculated measures.
-- Enabled scheduled refresh for the Dataflow, configured incremental refresh, and published the report to Power BI Service with report-level scheduled updates.
+## Visualization
+- Built a Decomposition Tree to break down Loan Amount by Income Bracket and Employment Type, allowing users to interactively drill down, explore key drivers, and   lock levels for structured insights.
+  ![Decomposition Tree](images/loan_decomposition_tree.png)
+
+- 
 
 ## Key Insights
 
-## Report
-Power BI report available in the repository.
+## Report Publishing
+- Performed data validation to ensure accuracy and consistency of key metrics and calculated measures.
+- Enabled scheduled refresh for the Dataflow, configured incremental refresh, and published the report to Power BI Service with report-level scheduled updates.
+
