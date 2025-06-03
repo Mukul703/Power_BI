@@ -56,7 +56,7 @@ CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date_DD_M
 - Built a Decomposition Tree to break down Loan Amount by Income Bracket and Employment Type, allowing users to interactively drill down, explore key drivers, and   lock levels for structured insights.
   [View Decomposition-tree](images/Decomposition-tree.png)
 - Ribbon Chart : The ribbon chart visualizes the YTD loan amount across credit score bins, segmented by martial status, showing value distribution and rank          changes. YTD is dynamically calculated based on the latest year in the dataset.
-  [View Decomposition-tree](images/Decomposition-tree.png)
+  [View Ribbon_chart](images/Ribbon_chart.png)
 ## Key Insights
 
 ## Report Publishing
