@@ -1,6 +1,16 @@
-
+## Table of Contents
+- [Tools Used](#tools-used)
+- [Data Source](#data-source)
+- [Domain](#domain)
+- [Objective](#objective)
+- [Data Preparation](#data-preparation)
+- [Custom Columns Created](#custom-columns-created)
+- [DAX Measures for Key Business Metrics](#dax-measures-for-key-business-metrics)
+- [Visualization](#visualization)
+- [Key Insights](#key-insights)
+- [Report Publishing](#report-publishing)
 ## Loan Default Analysis
-**Tools used :** Power BI Desktop, SQL Server Mangaement Studio
+**Tools used :** Power BI Desktop, SQL Server Management Studio
 **Data Source :** Dataflow
 **Domain :** Banking
 
@@ -46,19 +56,20 @@ DIVIDE(
 ```
 - YTD (Year-to-Date) loan amount is calculated using CALCULATE and DATESYTD to sum loans from the beginning of the year up to the current date, while ALLEXCEPT      keeps the grouping by Credit Score Bins and Marital Status.
 ```YTD Loan Amount By Credit Score Bins & Martial Status = 
-CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date_DD_MM_YYYY].[Date]),ALLEXCEPT('Loan Dataset','Loan Dataset'[Credit Score Bins],'Loan Dataset'[MaritalStatus]))
+CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Date]),ALLEXCEPT('Loan Dataset','Loan Dataset'[Credit Score Bins],'Loan Dataset'[MaritalStatus]))
 ```
 ## Visualization
-- Donut Chart : Visualizes the average loan amount for high creadit score customers segemnted by martial Status and age group.
+- Donut Chart : Visualizes the average loan amount for high credit score customers segmented by martial Status and age group.
   [View Donutchart](images/Donutchart.png)
 - Line Chart : Shows year-over-year change in loan defaults across different years.
   [View Linechart](images/Linechart.png)
-- Built a Decomposition Tree to break down Loan Amount by Income Bracket and Employment Type, allowing users to interactively drill down, explore key drivers, and   lock levels for structured insights.
-  [View Decomposition-tree](images/Decomposition-tree.png)
-- Ribbon Chart : The ribbon chart visualizes the YTD loan amount across credit score bins, segmented by martial status, showing value distribution and rank          changes. YTD is dynamically calculated based on the latest year in the dataset.
+- Ribbon Chart : The ribbon chart visualizes the YTD loan amount across credit score bins, segmented by marital status, showing value distribution and rank          changes. YTD is dynamically calculated based on the latest year in the dataset.
   [View Ribbon_chart](images/Ribbon_chart.png)
+- Used a Decomposition Tree to analyze Loan Amount by Income Bracket and Employment Type, enabling interactive drilldowns and insights.
+  [View Decomposition-tree](images/Decomposition-tree.png)
+  
 ## Key Insights
-
+- 
 ## Report Publishing
 - Performed data validation to ensure accuracy and consistency of key metrics and calculated measures.
 - Enabled scheduled refresh for the Dataflow, configured incremental refresh, and published the report to Power BI Service with report-level scheduled updates.
