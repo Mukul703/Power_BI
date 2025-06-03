@@ -1,7 +1,4 @@
 ## Table of Contents
-- [Tools Used](#tools-used)
-- [Data Source](#data-source)
-- [Domain](#domain)
 - [Objective](#objective)
 - [Data Preparation](#data-preparation)
 - [Custom Columns Created](#custom-columns-created)
