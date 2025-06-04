@@ -47,9 +47,9 @@ AVERAGEX(FILTER('Loan Dataset','Loan Dataset'[Credit Score Bins] = "High"),'Loan
 - YOY (Year-over-Year) percentage change in defaulted loans by comparing the current year's count of defaults to the previous year's, using CALCULATE, FILTER, and   DIVIDE to handle row context, date logic, and avoid divide-by-zero errors.
 ```YOY Default Loan Change By Year = 
 DIVIDE(
-    CALCULATE(COUNTROWS(FILTER('Loan Dataset','Loan Dataset'[Default]=True())),'Loan Dataset'[Year] = YEAR(MAX('Loan Dataset'[Loan_Date_DD_MM_YYYY]))) - 
-    CALCULATE(COUNTROWS(FILTER('Loan Dataset','Loan Dataset'[Default]=True())),'Loan Dataset'[Year] = YEAR(MAX('Loan Dataset'[Loan_Date_DD_MM_YYYY]))-1),
-    CALCULATE(COUNTROWS(FILTER('Loan Dataset','Loan Dataset'[Default]=True())),'Loan Dataset'[Year] = YEAR(MAX('Loan Dataset'[Loan_Date_DD_MM_YYYY]))-1),0) * 100
+    CALCULATE(COUNTROWS(FILTER('Loan Dataset','Loan Dataset'[Default]=True())),'Loan Dataset'[Year] = YEAR(MAX('Loan Dataset'[Loan_Date]))) - 
+    CALCULATE(COUNTROWS(FILTER('Loan Dataset','Loan Dataset'[Default]=True())),'Loan Dataset'[Year] = YEAR(MAX('Loan Dataset'[Loan_Date]))-1),
+    CALCULATE(COUNTROWS(FILTER('Loan Dataset','Loan Dataset'[Default]=True())),'Loan Dataset'[Year] = YEAR(MAX('Loan Dataset'[Loan_Date))-1),0) * 100
 ```
 - YTD (Year-to-Date) loan amount is calculated using CALCULATE and DATESYTD to sum loans from the beginning of the year up to the current date, while ALLEXCEPT      keeps the grouping by Credit Score Bins and Marital Status.
 ```YTD Loan Amount By Credit Score Bins & Martial Status = 
@@ -66,7 +66,15 @@ CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Da
   [View Decomposition-tree](images/Decomposition-tree.png)
   
 ## Key Insights
-- 
+- Unemployment drives the highest default rate (3.39%), making employment status a key risk indicator.
+  - Helps refine approval criteria based on job stability.
+- Default rates remained consistent between 11.5%–11.75% from 2013 to 2018, indicating long-term risk stability.
+  - Useful for forecasting and long-term risk planning.
+- Loan amounts are evenly distributed across purposes and age groups, with an average of approximately $127K.
+  - Suggests consistent lending behavior across demographics. 
+- High credit score borrowers, especially married ones, receive the largest median loans and show better repayment, confirming credit scoring’s role in risk         segmentation.
+  - Supports credit-based loan prioritization. 
+  
 ## Report Publishing
 - Performed data validation to ensure accuracy and consistency of key metrics and calculated measures.
 - Enabled scheduled refresh for the Dataflow, configured incremental refresh, and published the report to Power BI Service with report-level scheduled updates.
