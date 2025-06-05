@@ -7,7 +7,8 @@
 - [Key Insights](#key-insights)
 - [Report Publishing](#report-publishing)
 ##  Analysis
-**Tools used :** Power BI Desktop, SQL Server, MySQL, Power Query, DAX. 
+**Tools used :** Power BI Desktop, SQL Server, MySQL, Power Query, DAX.
+ 
 **Data Source :** 
 - Test Data  
   - Test Environment Inventory Dataset.csv: Contains sample inventory records for development and testing purposes
