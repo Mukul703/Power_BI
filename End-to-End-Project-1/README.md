@@ -79,4 +79,5 @@ CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Da
 ## Report Publishing
 - Performed data validation to ensure accuracy and consistency of key metrics and calculated measures.
 - Enabled scheduled refresh for the Dataflow, configured incremental refresh, and published the report to Power BI Service with report-level scheduled updates.
+## Conclusion
 This project demonstrates how data storytelling in Power BI can drive better decision-making in financial institutions.
