@@ -7,9 +7,15 @@
 - [Key Insights](#key-insights)
 - [Report Publishing](#report-publishing)
 ##  Analysis
-**Tools used :** Power BI Desktop,
+**Tools used :** Power BI Desktop, SQL Server, MySQL, Power Query, DAX. 
 **Data Source :** 
-**Domain :** 
+- **Test Data**:  
+  `Test_Environment_Inventory_Dataset.csv` - Contains sample inventory records for development and testing purposes
+- **Production Data**:  
+  `Prod_Env_Inventory_Dataset.csv` - Complete inventory records from the production environment for final analysis
+- **Reference Data**:  
+  `Products.csv` - Master list of all products with detailed attributes (SKU, description, category, etc.)
+**Domain :** Retail
 ## Objective
 
 ## Data Preparation
