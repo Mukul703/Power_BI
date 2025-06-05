@@ -16,7 +16,9 @@
   - Prod Env Inventory Dataset.csv: Complete inventory records from the production environment for final analysis
 - Reference Data 
   - Products.csv: Master list of all products with detailed attributes (SKU, description, category, etc.)
+
 **Domain :** Retail
+
 ## Objective
 
 ## Data Preparation
