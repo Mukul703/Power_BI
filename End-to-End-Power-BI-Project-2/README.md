@@ -9,12 +9,12 @@
 ##  Analysis
 **Tools used :** Power BI Desktop, SQL Server, MySQL, Power Query, DAX. 
 **Data Source :** 
-- **Test Data**:  
-  `Test_Environment_Inventory_Dataset.csv` - Contains sample inventory records for development and testing purposes
-- **Production Data**:  
-  `Prod_Env_Inventory_Dataset.csv` - Complete inventory records from the production environment for final analysis
-- **Reference Data**:  
-  `Products.csv` - Master list of all products with detailed attributes (SKU, description, category, etc.)
+- Test Data  
+  - Test Environment Inventory Dataset.csv: Contains sample inventory records for development and testing purposes
+- Production Data  
+  - Prod Env Inventory Dataset.csv: Complete inventory records from the production environment for final analysis
+- Reference Data 
+  - Products.csv: Master list of all products with detailed attributes (SKU, description, category, etc.)
 **Domain :** Retail
 ## Objective
 
