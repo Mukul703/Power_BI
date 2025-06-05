@@ -6,7 +6,7 @@
 - [Visualization](#visualization)
 - [Key Insights](#key-insights)
 - [Report Publishing](#report-publishing)
-##  Analysis
+## Inventory Management Dashboard
 **Tools used :** Power BI Desktop, SQL Server, MySQL, Power Query, DAX.
  
 **Data Source :** 
