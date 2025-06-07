@@ -9,9 +9,6 @@
 ## Inventory Management Dashboard
 **Tools used :**
 ---
-
-## Tools Used
-
 | Tool         | Purpose                         |
 |--------------|---------------------------------|
 | Power BI     | Dashboard creation              |
@@ -19,7 +16,6 @@
 | MySQL        | Production environment & testing|
 | DAX          | Measures & KPI logic            |
 | Power Query  | Data transformation & migration |
-
 ---
  
 **Data Source :** Raw data in CSV format, imported into SQL Server (test) and MySQL (production) for dashboard development in Power BI.
