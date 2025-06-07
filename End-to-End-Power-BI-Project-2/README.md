@@ -8,6 +8,19 @@
 - [Report Publishing](#report-publishing)
 ## Inventory Management Dashboard
 **Tools used :** Power BI Desktop, SQL Server, MySQL, Power Query, DAX.
+---
+
+## Tools Used
+
+| Tool         | Purpose                         |
+|--------------|---------------------------------|
+| Power BI     | Dashboard creation              |
+| SQL Server   | Data joins, cleaning, KPIs      |
+| MySQL        | Production environment & testing|
+| DAX          | Measures & KPI logic            |
+| Power Query  | Data transformation & migration |
+
+---
  
 **Data Source :** 
 - Test Data  
