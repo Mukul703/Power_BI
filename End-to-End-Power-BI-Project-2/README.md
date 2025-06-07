@@ -22,7 +22,7 @@
 - Test Data  
   - Test Environment Inventory Dataset.csv (DA Table): Contains sample inventory records for development and test         purposes, including daily product demand and availability.
 - Production Data  
-  - Prod Env Inventory Dataset.csv: Complete inventory records from the production environment for final analysis
+  - Prod Env Inventory Dataset.csv: Complete inventory records from the production environment for final analysis.
 - Reference Data 
   - Products.csv: Contains products details like Product ID, Name, and Unit Price used to link product details and        caculate KPIs. 
 
@@ -31,12 +31,15 @@
 ## Objective
 Developed an inventory dashboard in Power BI to simulate a real-world enterprise reporting system with a focus on clean, validated reporting workflow.
 -  Designing and validating the solution in a test environment
--  Creating insightful KPIs and DAX measures
+-  Creating insightful KPIs and DAX measures for supply-demand monitoring
 -  Transitioning the dashboard to a production environment
 -  Switching the data source from SQL Server to MySQL
 
 ## Data Preparation
-- 
+- Imported raw CSV files into the SQL Server test environment to simulate a real-world data source.
+- Joined the Products and Test Inventory tables using a LEFT JOIN to merge product details with inventory records.
+- Imported the merged dataset into Power BI Desktop.
+- Updated data types (e.g., Order Date to Date), renamed tables, and applied consistent background themes.
 ## Custom Columns Created
 - 
 ## DAX measures for key business metrics
