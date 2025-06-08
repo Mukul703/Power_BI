@@ -50,7 +50,7 @@ Developed an inventory dashboard in Power BI to simulate a real-world enterprise
 ## Notes
 - The production environment setup was later replicated in MySQL by rewriting SQL logic and updating Power BI           connections via the      Advanced Editor.
 ## Custom Columns Created
-- 
+- Loss/Profit: Created a Loss/Profit column by subtracting demand from availability, multiplied the result by unit price to calculate total      value impact, and derived average daily loss for better inventory and performance analysis.
 ## DAX measures for key business metrics
 - 
 ## Implemented time intelligence
