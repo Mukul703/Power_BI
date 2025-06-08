@@ -35,11 +35,20 @@ Developed an inventory dashboard in Power BI to simulate a real-world enterprise
 -  Transitioning the dashboard to a production environment
 -  Switching the data source from SQL Server to MySQL
 
-## Data Preparation
+# Data Preparation
+## Test Environment
 - Imported raw CSV files into the SQL Server test environment to simulate a real-world data source.
 - Joined the Products and Test Inventory tables using a LEFT JOIN to merge product details with inventory records.
 - Imported the merged dataset into Power BI Desktop.
+- Handled NULL values and ensured clean entries in fields like Order Date, Product ID, Demand, and Availability.
 - Updated data types (e.g., Order Date to Date), renamed tables, and applied consistent background themes.
+## Production Environment
+- Imported production inventory data into SQL Server.
+- Cleaned the dataset by fixing invalid product IDs (e.g., 21-7, 22-11) using SQL UPDATE queries.
+- Reapplied the same LEFT JOIN logic with the Products table.
+- Transitioned the Power BI report from test to production by updating Data Source Settings and validated the results.
+## Notes
+- The production environment setup was later replicated in MySQL by rewriting SQL logic and updating Power BI           connections via the Advanced Editor.
 ## Custom Columns Created
 - 
 ## DAX measures for key business metrics
