@@ -75,9 +75,7 @@ Total Loss = SUMX(FILTER('Availability/Demand Dataset','Availability/Demand Data
 - Average Loss Per Day: Determines the average loss per day due to supply shortages, helping evaluate recurring inefficiencies.
 ```Dax
 Avg Loss Per Day = DIVIDE('Measures 1'[Total Loss],'Measures 1'[Total Number of Days])
-``` 
-## Implemented time intelligence
-- 
+```  
 ## Visualization
 - Built a Power BI dashboard to present demand, availability, and inventory-related metrics across two report pages.
 - Used Card visuals (3 per report page) for clear, focused presentation.
