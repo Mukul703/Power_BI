@@ -23,13 +23,13 @@ To build an interactive Power BI report using a Loan Default Dataset, aimed at i
 - Credit Score Bins: Grouped borrowers by credit score to highlight differences in risk and repayment patterns.
 - Income Brackets: Grouped borrowers by income levels to analyze loan trends.
 ## DAX measures for key business metrics
-- Average Income by Employment Type: Calculates average income by employment type using `CALCULATE` and `ALLEXCEPT` to maintain group context while removing      other filters.
+- Average Income by Employment Type: Calculates average income by employment type using `CALCULATE` and `ALLEXCEPT` to maintain group context    while removing other filters.
 ```dax
 Avg Income By Emp type = 
 CALCULATE(AVERAGE('Loan Dataset'[Income]),
 ALLEXCEPT('Loan Dataset','Loan Dataset'[EmploymentType]))
 ```
-- Default Rate by Employment Type: Calculates the default rate by employment type using `DIVIDE` and `CALCULATE` to apply row filters and handle division safely.
+- Default Rate by Employment Type: Calculates the default rate by employment type using `DIVIDE` and `CALCULATE` to apply row filters and        handle division safely.
 ```dax
 Default Rate = 
 DIVIDE(
