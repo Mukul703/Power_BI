@@ -20,11 +20,11 @@
  
 **Data Source :** Raw data in CSV format, imported into SQL Server (test) and MySQL (production) for dashboard development in Power BI.
 - Test Data  
-  - Test Environment Inventory Dataset.csv (DA Table): Contains sample inventory records for development and test         purposes, including daily product demand and availability.
+  - Test Environment Inventory Dataset.csv (DA Table): Contains sample inventory records for development and test purposes, including daily        product demand and availability.
 - Production Data  
   - Prod Env Inventory Dataset.csv: Complete inventory records from the production environment for final analysis.
 - Reference Data 
-  - Products.csv: Contains products details like Product ID, Name, and Unit Price used to link product details and        caculate KPIs. 
+  - Products.csv: Contains products details like Product ID, Name, and Unit Price used to link product details and caculate KPIs. 
 
 **Domain :** Retail
 
@@ -44,11 +44,11 @@ Developed an inventory dashboard in Power BI to simulate a real-world enterprise
 - Updated data types (e.g., Order Date to Date), renamed tables, and applied consistent background themes.
 ## Production Environment
 - Imported production inventory data into SQL Server.
-- Cleaned the dataset by fixing invalid product IDs (e.g., 21-7, 22-11) using SQL UPDATE queries.
+- Cleaned the dataset by correcting two extra product IDs (21 and 22) to 7 and 11 respectively using SQL UPDATE queries.
 - Reapplied the same LEFT JOIN logic with the Products table.
 - Transitioned the Power BI report from test to production by updating Data Source Settings and validated the results.
 ## Notes
-- The production environment setup was later replicated in MySQL by rewriting SQL logic and updating Power BI           connections via the Advanced Editor.
+- The production environment setup was later replicated in MySQL by rewriting SQL logic and updating Power BI           connections via the      Advanced Editor.
 ## Custom Columns Created
 - 
 ## DAX measures for key business metrics
