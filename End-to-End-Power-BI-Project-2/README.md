@@ -50,11 +50,13 @@ Developed an inventory dashboard in Power BI to simulate a real-world enterprise
 - Imported the merged dataset into Power BI Desktop.
 - Handled NULL values and ensured clean entries in fields like Order Date, Product ID, Demand, and Availability.
 - Updated data types (e.g., Order Date to Date), renamed tables, and applied consistent background themes.
+
 ## Production Environment
 - Imported production inventory data into SQL Server.
 - Cleaned the dataset by correcting two extra product IDs (21 and 22) to 7 and 11 respectively using SQL UPDATE queries.
 - Reapplied the same LEFT JOIN logic with the Products table.
 - Transitioned the Power BI report from test to production by updating Data Source Settings and validated the results.
+
 ## Notes
 - The production environment setup was later replicated in MySQL by rewriting SQL logic and updating Power BI           connections via the      Advanced Editor.
 
@@ -65,26 +67,32 @@ Developed an inventory dashboard in Power BI to simulate a real-world enterprise
 ## DAX measures for key business metrics
 
 - Avg Demand Per Day: Calculates the average quantity demanded per day across the dataset to understand daily consumption patterns.
+
 ```Dax
 Avg Demand Per Day = DIVIDE([Total Demand],[Total Number of Days])
 ```
 - Avg Availability  Per Day: Computes the average available stock per day to monitor supply levels and warehouse readiness.
+
 ```Dax
 Avg Availability Per Day = DIVIDE([Total Availability],[Total Number of Days])
 ```
 - Total Supply Shortage: Measures the cumulative difference where demand exceeded availability, highlighting unmet demand.
+
 ```Dax
 Total Supply Shortage = [Total Demand] - [Total Availability]
 ```
 - Total Profit: Calculates total value generated where availability met or exceeded demand, multiplied by unit price.
+
 ```Dax
 Total Profit = SUMX(FILTER('Availability/Demand Dataset','Availability/Demand Dataset'[Loss/Profit]>0),'Availability/Demand Dataset'[Loss/Profit]*'Availability/Demand Dataset'[unit_price])
 ```
 - Total Loss: Sums up the lost opportunity value where availability fell short of demand, indicating stockout impact.
+
 ```Dax
 Total Loss = SUMX(FILTER('Availability/Demand Dataset','Availability/Demand Dataset'[Loss/Profit]<0),'Availability/Demand Dataset'[Loss/Profit]*'Availability/Demand Dataset'[unit_price])*-1
 ```
 - Average Loss Per Day: Determines the average loss per day due to supply shortages, helping evaluate recurring inefficiencies.
+
 ```Dax
 Avg Loss Per Day = DIVIDE('Measures 1'[Total Loss],'Measures 1'[Total Number of Days])
 ```  
@@ -104,7 +112,7 @@ Avg Loss Per Day = DIVIDE('Measures 1'[Total Loss],'Measures 1'[Total Number of 
 - 91% of production orders had stock shortages, totaling 63,925 units — highlighting the need for better inventory forecasting.
 
 **Estimated 12–15% Revenue Loss Due to Stockouts**
-- Despite $6.93M in revenue, missed demand led to an estimated 12–15% revenue loss, indicating growth potential through improved stock           availability.
+- Despite $6.93M in revenue, missed demand led to an estimated 12–15% revenue loss, indicating growth potential through improved stock          availability.
 
 **Average Shortfall of 59 Units per Order = ~24% Unfulfilled Demand**
 - Average supply shortfall per order was ~24%, reflecting gaps in demand forecasting and warehouse replenishment. 
