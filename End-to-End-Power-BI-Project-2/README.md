@@ -7,7 +7,8 @@
 - [Key Insights](#key-insights)
 - [Report Publishing](#report-publishing)
 ## Inventory Management Dashboard
-**Tools used :**
+A Power BI dashboard project simulating real-world inventory reporting, with SQL integration, KPI creation, and production deployment.
+**Tools used:**
 ---
 | Tool         | Purpose                         |
 |--------------|---------------------------------|
@@ -18,13 +19,13 @@
 | Power Query  | Data transformation & migration |
 ---
  
-**Data Source :** Raw data in CSV format, imported into SQL Server (test) and MySQL (production) for dashboard development in Power BI.
+**Data Source:** Raw data in CSV format, imported into SQL Server (test) and MySQL (production) for dashboard development in Power BI.
 - Test Data  
   - Test Environment Inventory Dataset.csv (DA Table): Contains sample inventory records for development and test purposes, including daily        product demand and availability.
 - Production Data  
   - Prod Env Inventory Dataset.csv: Complete inventory records from the production environment for final analysis.
 - Reference Data 
-  - Products.csv: Contains products details like Product ID, Name, and Unit Price used to link product details and caculate KPIs. 
+  - Products.csv: Contains products details like Product ID, Name, and Unit Price used to link product details and calculate KPIs. 
 
 **Domain :** Retail
 
@@ -91,6 +92,7 @@ Avg Loss Per Day = DIVIDE('Measures 1'[Total Loss],'Measures 1'[Total Number of 
 **Average Shortfall of 59 Units per Order = ~24% Unfulfilled Demand**
 - Average supply shortfall per order was ~24%, reflecting gaps in demand forecasting and warehouse replenishment.   
 ## Report Publishing
-- 
+- Published the Power BI report to Power BI Service using test and production data sources with validated visuals and KPIs.
 ## Conclusion
+This project provided hands-on experience in building an end-to-end inventory dashboard using Power BI. It enhanced my skills in data cleaning, SQL-based data integration, DAX, and publishing reports — simulating a real-world reporting workflow and delivering key business insights.
 
