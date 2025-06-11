@@ -87,7 +87,9 @@ Avg Loss Per Day = DIVIDE('Measures 1'[Total Loss],'Measures 1'[Total Number of 
 **91% of Orders Faced Shortages in Production**
 - 91% of production orders had stock shortages, totaling 63,925 units — highlighting the need for better inventory forecasting.
 **Estimated 12–15% Revenue Loss Due to Stockouts**
--    
+- Despite $6.93M in revenue, missed demand led to an estimated 12–15% revenue loss, indicating growth potential through improved stock           availability.
+**Average Shortfall of 59 Units per Order = ~24% Unfulfilled Demand**
+- Average supply shortfall per order was ~24%, reflecting gaps in demand forecasting and warehouse replenishment.   
 ## Report Publishing
 - 
 ## Conclusion
