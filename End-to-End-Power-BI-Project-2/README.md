@@ -26,6 +26,8 @@ Designed a Power BI dashboard to analyze supply-demand trends in a retail invent
 
 - Test Data  
   - Test Environment Inventory Dataset.csv (DA Table): Contains sample inventory records for development and test purposes, including daily        product demand and availability.
+- **Test Data**
+  - `Test Environment Inventory Dataset.csv`: ...
 - Production Data  
   - Prod Env Inventory Dataset.csv: Complete inventory records from the production environment for final analysis.
 - Reference Data 
