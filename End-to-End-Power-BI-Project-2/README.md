@@ -84,7 +84,9 @@ Avg Loss Per Day = DIVIDE('Measures 1'[Total Loss],'Measures 1'[Total Number of 
   - **Page 2**: Financial Impact – KPI cards for Total Profit, Total Loss, and Average Daily Loss.
 - Used filters for Product ID and Order Date to enable data slicing and focused analysis. 
 ## Key Insights
--   
+**91% of Orders Faced Shortages in Production**
+  91% of production orders had stock shortages, totaling 63,925 units — highlighting the need for better inventory forecasting.
+**Estimated 12–15% Revenue Loss Due to Stockouts**    
 ## Report Publishing
 - 
 ## Conclusion
