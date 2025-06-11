@@ -7,8 +7,11 @@
 - [Key Insights](#key-insights)
 - [Report Publishing](#report-publishing)
 ## Inventory Management Dashboard
-A Power BI dashboard project simulating real-world inventory reporting, with SQL integration, KPI creation, and production deployment.
+
+Designed a Power BI dashboard to analyze supply-demand trends in a retail inventory dataset. Integrated SQL Server and MySQL for data management, created DAX-based KPIs, and published a production-ready report.
+
 **Tools used:**
+
 ---
 | Tool         | Purpose                         |
 |--------------|---------------------------------|
@@ -20,6 +23,7 @@ A Power BI dashboard project simulating real-world inventory reporting, with SQL
 ---
  
 **Data Source:** Raw data in CSV format, imported into SQL Server (test) and MySQL (production) for dashboard development in Power BI.
+
 - Test Data  
   - Test Environment Inventory Dataset.csv (DA Table): Contains sample inventory records for development and test purposes, including daily        product demand and availability.
 - Production Data  
@@ -30,6 +34,7 @@ A Power BI dashboard project simulating real-world inventory reporting, with SQL
 **Domain :** Retail
 
 ## Objective
+
 Developed an inventory dashboard in Power BI to simulate a real-world enterprise reporting system with a focus on clean, validated reporting workflow.
 -  Designing and validating the solution in a test environment
 -  Creating insightful KPIs and DAX measures for supply-demand monitoring
@@ -37,6 +42,7 @@ Developed an inventory dashboard in Power BI to simulate a real-world enterprise
 -  Switching the data source from SQL Server to MySQL
 
 # Data Preparation
+
 ## Test Environment
 - Imported raw CSV files into the SQL Server test environment to simulate a real-world data source.
 - Joined the Products and Test Inventory tables using a LEFT JOIN to merge product details with inventory records.
@@ -50,9 +56,13 @@ Developed an inventory dashboard in Power BI to simulate a real-world enterprise
 - Transitioned the Power BI report from test to production by updating Data Source Settings and validated the results.
 ## Notes
 - The production environment setup was later replicated in MySQL by rewriting SQL logic and updating Power BI           connections via the      Advanced Editor.
+
 ## Custom Columns Created
+
 - Loss/Profit: Created a Loss/Profit column by subtracting demand from availability, multiplied the result by unit price to calculate total      value impact, and derived average daily loss for better inventory and performance analysis.
+
 ## DAX measures for key business metrics
+
 - Avg Demand Per Day: Calculates the average quantity demanded per day across the dataset to understand daily consumption patterns.
 ```Dax
 Avg Demand Per Day = DIVIDE([Total Demand],[Total Number of Days])
@@ -77,22 +87,30 @@ Total Loss = SUMX(FILTER('Availability/Demand Dataset','Availability/Demand Data
 ```Dax
 Avg Loss Per Day = DIVIDE('Measures 1'[Total Loss],'Measures 1'[Total Number of Days])
 ```  
+
 ## Visualization
+
 - Built a Power BI dashboard to present demand, availability, and inventory-related metrics across two report pages.
 - Used Card visuals (3 per report page) for clear, focused presentation.
 - Organized visuals across two report pages:
   - **Page 1**: Demand-Supply Overview – KPI cards for Average Daily Demand, Availability, and Supply Shortage.
   - **Page 2**: Financial Impact – KPI cards for Total Profit, Total Loss, and Average Daily Loss.
-- Used filters for Product ID and Order Date to enable data slicing and focused analysis. 
+- Used filters for Product ID and Order Date to enable data slicing and focused analysis.
+ 
 ## Key Insights
+
 **91% of Orders Faced Shortages in Production**
 - 91% of production orders had stock shortages, totaling 63,925 units — highlighting the need for better inventory forecasting.
 **Estimated 12–15% Revenue Loss Due to Stockouts**
 - Despite $6.93M in revenue, missed demand led to an estimated 12–15% revenue loss, indicating growth potential through improved stock           availability.
 **Average Shortfall of 59 Units per Order = ~24% Unfulfilled Demand**
-- Average supply shortfall per order was ~24%, reflecting gaps in demand forecasting and warehouse replenishment.   
+- Average supply shortfall per order was ~24%, reflecting gaps in demand forecasting and warehouse replenishment. 
+  
 ## Report Publishing
+
 - Published the Power BI report to Power BI Service using test and production data sources with validated visuals and KPIs.
+
 ## Conclusion
+
 This project provided hands-on experience in building an end-to-end inventory dashboard using Power BI. It enhanced my skills in data cleaning, SQL-based data integration, DAX, and publishing reports — simulating a real-world reporting workflow and delivering key business insights.
 
