@@ -13,6 +13,7 @@ Designed a Power BI dashboard to analyze supply-demand trends in a retail invent
 **Tools used:**
 
 ---
+
 | Tool         | Purpose                         |
 |--------------|---------------------------------|
 | Power BI     | Dashboard creation              |
@@ -20,6 +21,7 @@ Designed a Power BI dashboard to analyze supply-demand trends in a retail invent
 | MySQL        | Production environment & testing|
 | DAX          | Measures & KPI logic            |
 | Power Query  | Data transformation & migration |
+
 ---
  
 **Data Source:** Raw data in CSV format, imported into SQL Server (test) and MySQL (production) for dashboard development in Power BI.
@@ -27,7 +29,7 @@ Designed a Power BI dashboard to analyze supply-demand trends in a retail invent
 - Test Data  
   - Test Environment Inventory Dataset.csv (DA Table): Contains sample inventory records for development and test purposes, including daily        product demand and availability.
 - **Test Data**
-  - `Test Environment Inventory Dataset.csv`: ...
+  - `Test Environment Inventory Dataset.csv`: ...Contains sample inventory records for development and test purposes, including daily              product demand and availability.
 - Production Data  
   - Prod Env Inventory Dataset.csv: Complete inventory records from the production environment for final analysis.
 - Reference Data 
