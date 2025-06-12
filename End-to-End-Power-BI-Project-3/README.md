@@ -6,8 +6,19 @@
 - [Visualization](#visualization)
 - [Key Insights](#key-insights)
 - [Report Publishing](#report-publishing)
-## Loan Default Analysis
-**Tools used :** Power BI Desktop, SQL Server Management Studio
+## 
+**Tools used :**
+---
+
+| Tool         | Purpose                         |
+|--------------|---------------------------------|
+| Power BI     | Dashboard creation              |
+| SQL Server   | Data joins, cleaning, KPIs      |
+| MySQL        | Production environment & testing|
+| DAX          | Measures & KPI logic            |
+| Google Big Query  | Data transformation & migration |
+
+---
 **Data Source :** Dataflow
 **Domain :** Banking
 ## Objective
