@@ -9,6 +9,8 @@
 
 ## Housing Data Analysis 
 
+This is an end-to-end business intelligence project built using Power BI, showcasing expertise in data cleaning, DAX calculations, and interactive visualizations. It features cloud integration with Google BigQuery, SQL-based transformations, and deployment to the Power BI Service.
+
 **Tools used :**
 
 ---
@@ -28,20 +30,42 @@
 - **Google BigQuery** (connected to Power BI)
 - Original CSV file: `Housing Data.csv`
 
-**Domain :** Banking
+**Domain :** Real Estate Analytics
 
 ## Objective
-To build an interactive Power BI report using a Loan Default Dataset, aimed at identifying key factors that influence loan repayment. The goal is to help bank    officials make informed decisions by highlighting patterns in borrowing profiles and past defaults, ultimately reducing future loan risks.
+
+To analyze housing market data and generate actionable insights on sales trends, pricing patterns, regional performance, and property features using Power BI for effective decision-making.
+
 ## Data Preparation
-- Connected Power BI to an SQL Server source via Dataflow and imported data into Power BI Desktop.
-- Cleaned and transformed data using Power Query Editor
-  - Adjusted data types
-  - Renamed columns for clarity
-  - Performed column profiling for data quality
+
+- Loaded raw CSV data into **Google BigQuery** and connected it to **Power BI**.
+- Explored and cleaned data using:
+  - **SQL in BigQuery** for aggregations and conditional logic  
+    - Calculated `AVG(Purchase Price)` by Sales Type
+    - Set `SQM = 100` where `no_rooms = 3` to normalize area data
+  - **Power Query Editor** for transformation:
+    - Removed duplicates and renamed columns
+    - Replaced null values:
+      - `Inflation Rate` → 1.85
+      - `Yield on Mortgage Credit Bonds` → 1.47
+    - Applied column profiling and data quality checks
+- Final dataset was cleaned and structured for Power BI reporting and modeling.
+
 ## Custom Columns Created
-- Age Grouped: Categorized borrowers into age-based segments to support analysis of loan patterns across different life stages.
-- Credit Score Bins: Grouped borrowers by credit score to highlight differences in risk and repayment patterns.
-- Income Brackets: Grouped borrowers by income levels to analyze loan trends.
+
+- **Age of Property** 
+  Calculates how old the property is at the time of sale.  
+  *Used to analyze the relationship between property age and purchase price in visualizations.* 
+```Dax
+Age = ABS(YEAR('Housing Data'[date]) - 'Housing Data'[year_build])
+```
+- **Estimated Offer Price**
+  Calculates the initial offer price based on the final purchase price and the percentage change between them.
+  *Helps visualize negotiation patterns and understand pricing strategy differences.*
+```Dax
+Offer Price = (100*'Housing Data'[purchase_price])/(100-'Housing Data'[%_change_between_offer_and_purchase])
+```
+
 ## DAX measures for key business metrics
 - Average Income by Employment Type: Calculates average income by employment type using `CALCULATE` and `ALLEXCEPT` to maintain group context    while removing other filters.
 ```dax
