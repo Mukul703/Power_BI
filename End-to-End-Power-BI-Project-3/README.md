@@ -8,6 +8,7 @@
 - [Report Publishing](#report-publishing)
 ## 
 **Tools used :**
+
 ---
 
 | Tool         | Purpose                         |
@@ -19,6 +20,7 @@
 | Google Big Query  | Data transformation & migration |
 
 ---
+
 **Data Source :** Dataflow
 **Domain :** Banking
 ## Objective
