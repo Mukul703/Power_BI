@@ -39,17 +39,17 @@ To analyze housing market data and generate actionable insights on sales trends,
 ## Data Preparation
 
 - Loaded raw CSV data into **Google BigQuery** and connected it to **Power BI**.
-- Explored and cleaned data using:
-  - **SQL in BigQuery** for aggregations and conditional logic  
-    - Calculated `AVG(Purchase Price)` by Sales Type
-    - Set `SQM = 100` where `no_rooms = 3` to normalize area data
-  - **Power Query Editor** for transformation:
-    - Removed duplicates and renamed columns
-    - Replaced null values:
-      - `Inflation Rate` → 1.85
-      - `Yield on Mortgage Credit Bonds` → 1.47
-    - Applied column profiling and data quality checks
-- Final dataset was cleaned and structured for Power BI reporting and modeling.
+- Used **SQL in BigQuery** for data exploration and transformation:
+  - Applied aggregations and conditional logic.
+  - Calculated average purchase price by sales type.
+  - Normalized area data by setting `SQM = 100` where `no_rooms = 3`.
+- Used **Power Query Editor** for further data cleaning:
+  - Removed duplicates and renamed columns for clarity.
+  - Replaced null values:
+    - `Inflation Rate` → 1.85  
+    - `Yield on Mortgage Credit Bonds` → 1.47
+  - Performed column profiling and data quality checks.
+- Final dataset was cleaned, structured, and ready for reporting and DAX modeling in Power BI.
 
 ## Custom Columns Created
 
