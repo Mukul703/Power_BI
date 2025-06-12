@@ -15,9 +15,9 @@
 |--------------|---------------------------------|
 | Power BI     | Dashboard creation              |
 | SQL Server   | Data joins, cleaning, KPIs      |
-| MySQL        | Production environment & testing|
 | DAX          | Measures & KPI logic            |
-| Google Big Query  | Data transformation & migration |
+| Power Query  | Data transformation & migration |
+| Google Big Query  | Cloud-based data storage & SQL operations |
 
 ---
 
