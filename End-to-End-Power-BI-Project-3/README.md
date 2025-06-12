@@ -67,27 +67,30 @@ Offer Price = (100*'Housing Data'[purchase_price])/(100-'Housing Data'[%_change_
 ```
 
 ## DAX measures for key business metrics
-- Average Income by Employment Type: Calculates average income by employment type using `CALCULATE` and `ALLEXCEPT` to maintain group context    while removing other filters.
+
+- Avg Sqm Price: Calculates the average cost per square meter.  
+  *Used to compare property value across regions and property types.* 
 ```dax
-Avg Income By Emp type = 
-CALCULATE(AVERAGE('Loan Dataset'[Income]),
-ALLEXCEPT('Loan Dataset','Loan Dataset'[EmploymentType]))
+Avg Sqm Price = AVERAGE('Housing Data'[sqm_price])
 ```
-- Default Rate by Employment Type: Calculates the default rate by employment type using `DIVIDE` and `CALCULATE` to apply row filters and        handle division safely.
+- Last 12-Month Sales: Calculates the total purchase price for the last 12 months based on the selected date context.  
+  *Used to track recent annual sales performance and monitor market momentum.* 
 ```dax
-Default Rate = 
-DIVIDE(
-    CALCULATE(COUNTROWS('LoanData'), 'LoanData'[LoanStatus] = "Default"),
-    CALCULATE(COUNTROWS('LoanData')),
-    0
+  Last 12 Month Sales = 
+  CALCULATE(
+    SUM('Housing Data'[purchase_price]),
+    DATESINPERIOD('Housing Data'[date], MAX('Housing Data'[date]), -12, MONTH)
 )
 ``` 
-- Avg Loan Amt (High Credit): Calculates the average loan amount for entries where the credit score is categorized as "High".
+- Offer to SQM Ratio: Calculates the average offer price per square meter.
+  *Used to compare buyer willingness to pay relative to property size.*  
+```Dax
+  Offer to SQM Ratio = 
+  DIVIDE(
+    SUM('Housing Data'[Offer Price]),
+    SUM('Housing Data'[sqm])
 ```
-Avg Loan Amt(High Credit) = 
-AVERAGEX(FILTER('Loan Dataset','Loan Dataset'[Credit Score Bins] = "High"),'Loan Dataset'[LoanAmount])
-```
-- Median Loan Amount by Credit Score Category using MEDIAN.
+- Sales by Region: Calculates total sales while preserving filter context only for the region. 
 ## Implemented time intelligence
 - YOY (Year-over-Year) percentage change in defaulted loans by comparing the current year's count of defaults to the previous year's, using CALCULATE, FILTER, and   DIVIDE to handle row context, date logic, and avoid divide-by-zero errors.
 ```YOY Default Loan Change By Year = 
