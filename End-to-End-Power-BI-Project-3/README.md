@@ -6,7 +6,7 @@
 - [Visualization](#visualization)
 - [Key Insights](#key-insights)
 - [Report Publishing](#report-publishing)
-## 
+## Housing Data Analysis 
 **Tools used :**
 
 ---
@@ -21,7 +21,7 @@
 
 ---
 
-**Data Source :** Dataflow
+**Data Source :** Goole Big Query
 **Domain :** Banking
 ## Objective
 To build an interactive Power BI report using a Loan Default Dataset, aimed at identifying key factors that influence loan repayment. The goal is to help bank    officials make informed decisions by highlighting patterns in borrowing profiles and past defaults, ultimately reducing future loan risks.
