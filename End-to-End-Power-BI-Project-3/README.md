@@ -137,7 +137,7 @@ Offer Price = (100*'Housing Data'[purchase_price])/(100-'Housing Data'[%_change_
 ### Page 1: House Market Overview
 A high-level dashboard showcasing key housing market insights.
 
-![Page1–House-Market-Overview](Screenshots/page1-overview.png)
+![Page1–House-Market-Overview](images/page1-overview.png)
 
 **Visuals:**
 - **Scatter Plot - Offer Price vs Purchase Price** Visualizes how closely actual purchase prices align with listed offer prices.
