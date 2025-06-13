@@ -140,8 +140,8 @@ A high-level dashboard showcasing key housing market insights.
 ![Page1–House-Market-Overview](images/page1-overview.png)
 
 **Visuals:**
-- **Scatter Plot - Offer Price vs Purchase Price** Visualizes how closely actual purchase prices align with listed offer prices.
-- **Stacked Bar Chart - Median Sales Price Change by Region** Compares year-over-year price changes across different regions.
+- **Scatter Plot - Offer Price vs Purchase Price**: Visualizes how closely actual purchase prices align with listed offer prices.
+- **Stacked Bar Chart - Median Sales Price Change by Region**: Compares year-over-year price changes across different regions.
 - **Line Chart – YoY Sales Growth by Sales Type**: Shows annual sales growth trends segmented by sale types (e.g., auction, family, regular).
 - **KPI Cards – Units Sold & Last 12-Month Sales**: Highlights total units sold and cumulative sales value over the past year.
 ### Page 2: Sales Performance
