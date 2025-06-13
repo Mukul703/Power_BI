@@ -156,6 +156,8 @@ Analyzes sales volume, pricing drivers, and regional efficiency metrics.
 ### Page 3: House Type Analysis
 Compares pricing and financial metrics across different property types.
 
+![Page1–sales-performance](images/page1-sales-performance.png)
+
 **Visuals:**
 - **Clustered Bar Chart – Avg. Offer vs Purchase Price by House Type**: Highlights pricing differences by house type.
   **Avg. Inflation, Interest, Yield by House Type**: Shows financial factor impact per house type.
