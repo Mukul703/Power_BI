@@ -157,20 +157,17 @@ Analyzes sales volume, pricing drivers, and regional efficiency metrics.
 ### Page 3: House Type Analysis
 Compares pricing and financial metrics across different property types.
 
-**Visuals**
+**Visuals:**
 - **Clustered Bar Chart – Avg. Offer vs Purchase Price by House Type**: Highlights pricing differences by house type.
   **Avg. Inflation, Interest, Yield by House Type**: Shows financial factor impact per house type.
 - **Line & Clustered Column Chart – Avg. SQM & SQM Price by House Type**: Visualizes size and per sqm price distribution.
 - **Slicers – Region, Area, City, Sales Type**: Enables multi-level filtering across all visuals.
 
 ## Key Insights
-- Unemployment drives the highest default rate (3.39%), making employment status a key risk indicator.
-  - Helps refine approval criteria based on job stability.
-- Default rates remained consistent between 11.5%–11.75% from 2013 to 2018, indicating long-term risk stability.
-  - Useful for forecasting and long-term risk planning.
-- Loan amounts are evenly distributed across purposes and age groups, with an average of approximately $127K.
-  - Suggests consistent lending behavior across demographics. 
-- 
+**88% of Properties Sold Close to Asking Price**
+
+**Zealand Shows 12.5% YoY Median Price Increase**
+**Row Houses Have 22% Higher Avg. SQM Price Than Villas** 
   
 ## Report Publishing
 - Performed data validation to ensure accuracy and consistency of key metrics and calculated measures.
