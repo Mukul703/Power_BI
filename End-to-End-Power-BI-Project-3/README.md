@@ -141,9 +141,25 @@ Offer Price = (100*'Housing Data'[purchase_price])/(100-'Housing Data'[%_change_
 
 ### Page 1: House Market Overview
 A high-level dashboard showcasing key housing market insights.
-
 **Visuals:**
-- Scatter Plot: **Offer Price vs Purchase Price** Visualizes how closely actual purchase prices align with listed offer prices.
+- **Scatter Plot - Offer Price vs Purchase Price** Visualizes how closely actual purchase prices align with listed offer prices.
+- **Stacked Bar Chart - Median Sales Price Change by Region** Compares year-over-year price changes across different regions.
+- **Line Chart – YoY Sales Growth by Sales Type**: Shows annual sales growth trends segmented by sale types (e.g., auction, family, regular).
+- **KPI Cards – Units Sold & Last 12-Month Sales**: Highlights total units sold and cumulative sales value over the past year.
+### Page 2: Sales Performance
+Analyzes sales volume, pricing drivers, and regional efficiency metrics.
+**Visuals:**
+- **Stacked Bar Chart – Sales by Region**: Compares total sales volume across regions.
+- **Key Influencer – Purchase Price by Age**: Identifies how property age affects purchase price.
+- **Pie Chart – Avg. SQM Price by Region**: Shows average price per square meter by region.
+### Page 3: House Type Analysis
+
+**Visuals**
+- **Clustered Bar Chart – Avg. Offer vs Purchase Price by House Type**: Highlights pricing differences by house type.
+  **Avg. Inflation, Interest, Yield by House Type**: Shows financial factor impact per house type.
+- **Line & Clustered Column Chart – Avg. SQM & SQM Price by House Type**: Visualizes size and per sqm price distribution.
+- **Slicers – Region, Area, City, Sales Type**: Enables multi-level filtering across all visuals.
+
 ## Key Insights
 - Unemployment drives the highest default rate (3.39%), making employment status a key risk indicator.
   - Helps refine approval criteria based on job stability.
@@ -151,8 +167,7 @@ A high-level dashboard showcasing key housing market insights.
   - Useful for forecasting and long-term risk planning.
 - Loan amounts are evenly distributed across purposes and age groups, with an average of approximately $127K.
   - Suggests consistent lending behavior across demographics. 
-- High credit score borrowers, especially married ones, receive the largest median loans and show better repayment, confirming credit           scoring’s role in risk segmentation.
-  - Supports credit-based loan prioritization. 
+- 
   
 ## Report Publishing
 - Performed data validation to ensure accuracy and consistency of key metrics and calculated measures.
