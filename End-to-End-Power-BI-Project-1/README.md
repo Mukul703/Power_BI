@@ -52,7 +52,7 @@ DIVIDE(
     CALCULATE(COUNTROWS(FILTER('Loan Dataset','Loan Dataset'[Default]=True())),'Loan Dataset'[Year] = YEAR(MAX('Loan Dataset'[Loan_Date]))-1),
     CALCULATE(COUNTROWS(FILTER('Loan Dataset','Loan Dataset'[Default]=True())),'Loan Dataset'[Year] = YEAR(MAX('Loan Dataset'[Loan_Date))-1),0) * 100
 ```
-- YTD (Year-to-Date) loan amount is calculated using CALCULATE and DATESYTD to sum loans from the beginning of the year up to the current date, while ALLEXCEPT      keeps the grouping by Credit Score Bins and Marital Status.
+- YTD (Year-to-Date) loan amount is calculated using CALCULATE and DATESYTD to sum loans from the beginning of the year up to the current date, while ALLEXCEPT keeps the grouping by Credit Score Bins and Marital Status.
 ```YTD Loan Amount By Credit Score Bins & Marital Status = 
 CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Date]),ALLEXCEPT('Loan Dataset','Loan Dataset'[Credit Score Bins],'Loan Dataset'[MaritalStatus]))
 ```
@@ -61,7 +61,7 @@ CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Da
   [View Donutchart](images/Donutchart.png)
 - Line Chart: Displays year-over-year changes in loan default rates.
   [View Linechart](images/Linechart.png)
-- Ribbon Chart: The ribbon chart visualizes the YTD loan amount across credit score bins, segmented by marital status, showing value distribution and rank           changes. YTD is dynamically calculated based on the latest year in the dataset.
+- Ribbon Chart: The ribbon chart visualizes the YTD loan amount across credit score bins, segmented by marital status, showing value             distribution and rank changes. YTD is dynamically calculated based on the latest year in the dataset.
   [View Ribbon_chart](images/Ribbon_chart.png)
 - Used a Decomposition Tree to analyze Loan Amount by Income Bracket and Employment Type, enabling interactive drilldowns and insights.
   [View Decomposition-tree](images/Decomposition-tree.png)
@@ -73,11 +73,11 @@ CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Da
   - Useful for forecasting and long-term risk planning.
 - Loan amounts are evenly distributed across purposes and age groups, with an average of approximately $127K.
   - Suggests consistent lending behavior across demographics. 
-- High credit score borrowers, especially married ones, receive the largest median loans and show better repayment, confirming credit scoring’s role in risk         segmentation.
+- High credit score borrowers, especially married ones, receive the largest median loans and show better repayment, confirming credit            scoring’s role in risk segmentation.
   - Supports credit-based loan prioritization. 
   
 ## Report Publishing
 - Performed data validation to ensure accuracy and consistency of key metrics and calculated measures.
-- Enabled scheduled refresh for the Dataflow, configured incremental refresh, and published the report to Power BI Service with report-level scheduled updates.
+- Enabled scheduled refresh for the Dataflow, configured incremental refresh, and published the report to Power BI Service with report-level     scheduled updates.
 ## Conclusion
 This project demonstrates how data storytelling in Power BI can drive better decision-making in financial institutions.
