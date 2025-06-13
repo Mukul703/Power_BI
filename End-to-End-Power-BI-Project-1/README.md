@@ -60,11 +60,11 @@ CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Da
 - Donut Chart: Visualizes the average loan amount for high credit score customers segmented by marital Status and age group.
   ![Donutchart](Screenshots/Donutchart.png)
 - Line Chart: Displays year-over-year changes in loan default rates.
-  [View Linechart](images/Linechart.png)
+  ![Linechart](Screenshots/Linechart.png)
 - Ribbon Chart: The ribbon chart visualizes the YTD loan amount across credit score bins, segmented by marital status, showing value             distribution and rank changes. YTD is dynamically calculated based on the latest year in the dataset.
-  [View Ribbon_chart](images/Ribbon_chart.png)
+  ![Ribbon_chart](Screenshots/Ribbon_chart.png)
 - Used a Decomposition Tree to analyze Loan Amount by Income Bracket and Employment Type, enabling interactive drilldowns and insights.
-  [View Decomposition-tree](images/Decomposition-tree.png)
+  ![Decomposition-tree](Screenshots/Decomposition-tree.png)
   
 ## Key Insights
 - Unemployment drives the highest default rate (3.39%), making employment status a key risk indicator.
