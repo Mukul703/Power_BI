@@ -8,11 +8,9 @@
 - [Report Publishing](#report-publishing)
 
 ## Housing Data Analysis 
-
 This is an end-to-end business intelligence project built using Power BI, showcasing expertise in data cleaning, DAX calculations, and interactive visualizations. It features cloud integration with Google BigQuery, SQL-based transformations, and deployment to the Power BI Service.
 
 **Tools used :**
-
 ---
 
 | Tool         | Purpose                         |
@@ -26,18 +24,15 @@ This is an end-to-end business intelligence project built using Power BI, showca
 ---
 
 **Data Source :** 
-
 - **Google BigQuery** (connected to Power BI)
 - Original CSV file: `Housing Data.csv`
 
 **Domain :** Real Estate Analytics
 
 ## Objective
-
 To analyze housing market data and generate actionable insights on sales trends, pricing patterns, regional performance, and property features using Power BI for effective decision-making.
 
 ## Data Preparation
-
 - Loaded raw CSV data into **Google BigQuery** and connected it to **Power BI**.
 - Used **SQL in BigQuery** for data exploration and transformation:
   - Applied aggregations and conditional logic.
@@ -52,7 +47,6 @@ To analyze housing market data and generate actionable insights on sales trends,
 - Final dataset was cleaned, structured, and ready for reporting and DAX modeling in Power BI.
 
 ## Custom Columns Created
-
 - **Age of Property** 
   Calculates how old the property is at the time of sale.  
   *Used to analyze the relationship between property age and purchase price in visualizations.* 
@@ -67,7 +61,6 @@ Offer Price = (100*'Housing Data'[purchase_price])/(100-'Housing Data'[%_change_
 ```
 
 ## DAX measures for key business metrics
-
 - Avg Sqm Price: Calculates the average cost per square meter.  
   *Used to compare property value across regions and property types.* 
 ```dax
@@ -174,6 +167,16 @@ Compares pricing and financial metrics across different property types.
 - Buyers are willing to pay more for moderately aged homes, reflecting a balance between modern features and structural stability.
 
 ## Report Publishing
-This Power BI report was published to the **Power BI Service**, enabling interactive web access and sharing.
-## Conclusion
+- Report published on **Power BI Service** for interactive access.
+- Supports **filters, drill-throughs, and cross-highlight** interactions.
 
+## Conclusion
+This project helped uncover how pricing, location, and property type influence housing market trends. The report makes it easy to compare regions, spot high-value property types, and understand buyer behavior. It’s a simple, clear way to turn raw data into insights that matter.
+
+## What I Learned
+- How to design and structure a complete Power BI report for real-world analysis.
+- Gained hands-on experience with DAX, data modeling, and interactive visualizations.
+- Applied page-level filters to enhance user-driven insights (e.g., house type analysis by region, city, and sales type).
+- Learned how to connect and transform housing data into a meaningful story using Power BI.
+
+Thanks for checking out this project!
