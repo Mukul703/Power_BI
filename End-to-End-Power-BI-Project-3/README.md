@@ -141,6 +141,7 @@ Offer Price = (100*'Housing Data'[purchase_price])/(100-'Housing Data'[%_change_
 
 ### Page 1: House Market Overview
 A high-level dashboard showcasing key housing market insights.
+
 **Visuals:**
 - **Scatter Plot - Offer Price vs Purchase Price** Visualizes how closely actual purchase prices align with listed offer prices.
 - **Stacked Bar Chart - Median Sales Price Change by Region** Compares year-over-year price changes across different regions.
@@ -148,11 +149,13 @@ A high-level dashboard showcasing key housing market insights.
 - **KPI Cards – Units Sold & Last 12-Month Sales**: Highlights total units sold and cumulative sales value over the past year.
 ### Page 2: Sales Performance
 Analyzes sales volume, pricing drivers, and regional efficiency metrics.
+
 **Visuals:**
 - **Stacked Bar Chart – Sales by Region**: Compares total sales volume across regions.
 - **Key Influencer – Purchase Price by Age**: Identifies how property age affects purchase price.
 - **Pie Chart – Avg. SQM Price by Region**: Shows average price per square meter by region.
 ### Page 3: House Type Analysis
+Compares pricing and financial metrics across different property types.
 
 **Visuals**
 - **Clustered Bar Chart – Avg. Offer vs Purchase Price by House Type**: Highlights pricing differences by house type.
