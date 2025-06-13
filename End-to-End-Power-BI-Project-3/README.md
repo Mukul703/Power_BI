@@ -167,7 +167,7 @@ Compares pricing and financial metrics across different property types.
 ## Key Insights
 
 **88% of Properties Sold Close to Asking Price**
-- The scatter plot shows a strong correlation between offer and purchase prices, indicating minimal negotiation and a transparent, price-       efficient housing market.
+- The scatter plot shows a strong correlation between offer and purchase prices, indicating minimal negotiation and a transparent, price-efficient housing market.
 **Zealand Shows 12.5% YoY Median Price Increase**
 - Regional analysis highlights these as high-growth areas, signaling demand concentration and investment hotspots.
 **Row Houses Have 22% Higher Avg. SQM Price Than Villas**
