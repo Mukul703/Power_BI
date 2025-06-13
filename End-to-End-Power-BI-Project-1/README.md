@@ -57,6 +57,9 @@ DIVIDE(
 CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Date]),ALLEXCEPT('Loan Dataset','Loan Dataset'[Credit Score Bins],'Loan Dataset'[MaritalStatus]))
 ```
 ## Visualization
+
+### Page 1: House Market Overview
+
 - Donut Chart: Visualizes the average loan amount for high credit score customers segmented by marital Status and age group.
   ![Page1–loan-default-overview](Screenshots/page1-loan-default-overview.png)
 - Line Chart: Displays year-over-year changes in loan default rates.
