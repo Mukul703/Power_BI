@@ -103,8 +103,9 @@ Avg Loss Per Day = DIVIDE('Measures 1'[Total Loss],'Measures 1'[Total Number of 
 - Used Card visuals (3 per report page) for clear, focused presentation.
 - Organized visuals across two report pages:
   - **Page 1**: Demand-Supply Overview – KPI cards for Average Daily Demand, Availability, and Supply Shortage.
-  ![page1-KPI1](Screenshots/page1-KPI1.png)
+  ![page1-KPI1](pics/page1-KPI1.png)
   - **Page 2**: Financial Impact – KPI cards for Total Profit, Total Loss, and Average Daily Loss.
+  ![page2-KPI2](pics/page2-KPI2.png)
 - Used filters for Product ID and Order Date to enable data slicing and focused analysis.
  
 ## Key Insights
