@@ -160,7 +160,6 @@ Compares pricing and financial metrics across different property types.
 
 **Visuals:**
 - **Clustered Bar Chart – Avg. Offer vs Purchase Price by House Type**: Highlights pricing differences by house type.
-  **Avg. Inflation, Interest, Yield by House Type**: Shows financial factor impact per house type.
 - **Line & Clustered Column Chart – Avg. SQM & SQM Price by House Type**: Visualizes size and per sqm price distribution.
 - **Slicers – Region, Area, City, Sales Type**: Enables multi-level filtering across all visuals.
 
