@@ -7,7 +7,7 @@
 - [Key Insights](#key-insights)
 - [Report Publishing](#report-publishing)
 - [Conclusion](#conclusion)
-- [What I Learned](what-i-learned)
+- [What I Learned](#what-i-learned)
 
 ## Housing Data Analysis 
 This is an end-to-end business intelligence project built using Power BI, showcasing expertise in data cleaning, DAX calculations, and interactive visualizations. It features cloud integration with Google BigQuery, SQL-based transformations, and deployment to the Power BI Service.
