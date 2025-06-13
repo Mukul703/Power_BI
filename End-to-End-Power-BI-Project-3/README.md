@@ -143,7 +143,7 @@ Offer Price = (100*'Housing Data'[purchase_price])/(100-'Housing Data'[%_change_
 A high-level dashboard showcasing key housing market insights.
 
 **Visuals:**
-- Scatter Plot: **Offer Price vs Purchase Price**: Visualizes how closely actual purchase prices align with listed offer prices.
+- Scatter Plot: **Offer Price vs Purchase Price** Visualizes how closely actual purchase prices align with listed offer prices.
 ## Key Insights
 - Unemployment drives the highest default rate (3.39%), making employment status a key risk indicator.
   - Helps refine approval criteria based on job stability.
