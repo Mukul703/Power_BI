@@ -147,6 +147,8 @@ A high-level dashboard showcasing key housing market insights.
 ### Page 2: Sales Performance
 Analyzes sales volume, pricing drivers, and regional efficiency metrics.
 
+![Page2–sales-performance](images/page1-overview.png)
+
 **Visuals:**
 - **Stacked Bar Chart – Sales by Region**: Compares total sales volume across regions.
 - **Key Influencer – Purchase Price by Age**: Identifies how property age affects purchase price.
