@@ -168,13 +168,10 @@ Compares pricing and financial metrics across different property types.
 
 **88% of Properties Sold Close to Asking Price**
 - The scatter plot shows a strong correlation between offer and purchase prices, indicating minimal negotiation and a transparent, price-       efficient housing market.
-
 **Zealand Shows 12.5% YoY Median Price Increase**
 - Regional analysis highlights these as high-growth areas, signaling demand concentration and investment hotspots.
-
 **Row Houses Have 22% Higher Avg. SQM Price Than Villas**
 - House type analysis reveals strong market preference or scarcity driving higher per-square-meter pricing for row houses.
-
 **Mid-Aged Properties (10–20 Years) Sell at an 18% Premium**
 - Buyers are willing to pay more for moderately aged homes, reflecting a balance between modern features and structural stability.
 
