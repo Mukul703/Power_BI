@@ -174,6 +174,6 @@ Compares pricing and financial metrics across different property types.
 - Buyers are willing to pay more for moderately aged homes, reflecting a balance between modern features and structural stability.
 
 ## Report Publishing
-This Power BI report was published to the **Power BI Service**, enabling interactive web access and sharing. Key publishing features include:
+This Power BI report was published to the **Power BI Service**, enabling interactive web access and sharing.
 ## Conclusion
-This project demonstrates how data storytelling in Power BI can drive better decision-making in financial institutions.
+
