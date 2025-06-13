@@ -165,12 +165,15 @@ Compares pricing and financial metrics across different property types.
 
 ## Key Insights
 **88% of Properties Sold Close to Asking Price**
-
+- The scatter plot shows a strong correlation between offer and purchase prices, indicating minimal negotiation and a transparent, price-       efficient housing market.
 **Zealand Shows 12.5% YoY Median Price Increase**
-**Row Houses Have 22% Higher Avg. SQM Price Than Villas** 
-  
+- Regional analysis highlights these as high-growth areas, signaling demand concentration and investment hotspots.
+**Row Houses Have 22% Higher Avg. SQM Price Than Villas**
+- House type analysis reveals strong market preference or scarcity driving higher per-square-meter pricing for row houses.
+**Mid-Aged Properties (10–20 Years) Sell at an 18% Premium**
+- Buyers are willing to pay more for moderately aged homes, reflecting a balance between modern features and structural stability.
+
 ## Report Publishing
-- Performed data validation to ensure accuracy and consistency of key metrics and calculated measures.
-- Enabled scheduled refresh for the Dataflow, configured incremental refresh, and published the report to Power BI Service with report-level scheduled updates.
+This Power BI report was published to the **Power BI Service**, enabling interactive web access and sharing. Key publishing features include:
 ## Conclusion
 This project demonstrates how data storytelling in Power BI can drive better decision-making in financial institutions.
