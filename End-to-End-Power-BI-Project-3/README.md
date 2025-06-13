@@ -138,13 +138,12 @@ Offer Price = (100*'Housing Data'[purchase_price])/(100-'Housing Data'[%_change_
       IF(PrevYearSales <> 0, (CurrYearSales - PrevYearSales) / PrevYearSales, BLANK())
 ```
 ## Visualization
-- Donut Chart: Visualizes the average loan amount for high credit score customers segmented by marital Status and age group.
-  [View Donutchart](images/Donutchart.png)
-- Line Chart: Displays year-over-year changes in loan default rates.
-  [View Linechart](images/Linechart.png)
-- Ribbon Chart: The ribbon chart visualizes the YTD loan amount across credit score bins, segmented by marital status, showing value distribution and rank           changes. YTD is dynamically calculated based on the latest year in the dataset.
-  [View Ribbon_chart](images/Ribbon_chart.png)
-  
+
+### Page 1: House Market Overview
+A high-level dashboard showcasing key housing market insights.
+
+**Visuals:**
+- Scatter Plot: **Offer Price vs Purchase Price**: Visualizes how closely actual purchase prices align with listed offer prices.
 ## Key Insights
 - Unemployment drives the highest default rate (3.39%), making employment status a key risk indicator.
   - Helps refine approval criteria based on job stability.
