@@ -71,7 +71,7 @@ Offer Price = (100*'Housing Data'[purchase_price])/(100-'Housing Data'[%_change_
 - Avg Sqm Price: Calculates the average cost per square meter.  
   *Used to compare property value across regions and property types.* 
 ```dax
-Avg Sqm Price = AVERAGE('Housing Data'[sqm_price])
+  Avg Sqm Price = AVERAGE('Housing Data'[sqm_price])
 ```
 - Last 12-Month Sales: Calculates the total purchase price for the last 12 months based on the selected date context.  
   *Used to track recent annual sales performance and monitor market momentum.* 
@@ -90,18 +90,52 @@ Avg Sqm Price = AVERAGE('Housing Data'[sqm_price])
     SUM('Housing Data'[Offer Price]),
     SUM('Housing Data'[sqm])
 ```
-- Sales by Region: Calculates total sales while preserving filter context only for the region. 
-## Implemented time intelligence
-- YOY (Year-over-Year) percentage change in defaulted loans by comparing the current year's count of defaults to the previous year's, using CALCULATE, FILTER, and   DIVIDE to handle row context, date logic, and avoid divide-by-zero errors.
-```YOY Default Loan Change By Year = 
-DIVIDE(
-    CALCULATE(COUNTROWS(FILTER('Loan Dataset','Loan Dataset'[Default]=True())),'Loan Dataset'[Year] = YEAR(MAX('Loan Dataset'[Loan_Date]))) - 
-    CALCULATE(COUNTROWS(FILTER('Loan Dataset','Loan Dataset'[Default]=True())),'Loan Dataset'[Year] = YEAR(MAX('Loan Dataset'[Loan_Date]))-1),
-    CALCULATE(COUNTROWS(FILTER('Loan Dataset','Loan Dataset'[Default]=True())),'Loan Dataset'[Year] = YEAR(MAX('Loan Dataset'[Loan_Date))-1),0) * 100
+- Sales by Region: Calculates total sales while preserving filter context only for the region.
+  *Used to analyze regional sales performance without being affected by other filters.*
+```Dax
+  Sales by Region = 
+  CALCULATE(
+    SUM('Housing Data'[purchase_price]),
+    ALLEXCEPT('Housing Data', 'Housing Data'[region])
+  )
 ```
-- YTD (Year-to-Date) loan amount is calculated using CALCULATE and DATESYTD to sum loans from the beginning of the year up to the current date, while ALLEXCEPT      keeps the grouping by Credit Score Bins and Marital Status.
-```YTD Loan Amount By Credit Score Bins & Marital Status = 
-CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Date]),ALLEXCEPT('Loan Dataset','Loan Dataset'[Credit Score Bins],'Loan Dataset'[MaritalStatus]))
+- Units Sold in Latest Year & Quarter: Counts unique houses sold in the most recent year and quarter based on the selected date context.
+  *Used to monitor recent market activity at a granular time level.* 
+```Dax
+ Unit Sold in latest Year & Quarters = 
+  CALCULATE(
+    DISTINCTCOUNT('Housing Data'[house_id]),
+    YEAR('Housing Data'[date]) = YEAR(MAX('Housing Data'[date])) &&
+    QUARTER('Housing Data'[date]) = QUARTER(MAX('Housing Data'[date]))
+  )
+```
+## implemented Time Inteligence
+
+- Total YTD (Year-to-Date) Sales: Calculates cumulative purchase price from the start of the year up to the current date.
+  *Used to track yearly sales performance as it progresses.*
+```Dax
+  Total YTD Sales = 
+  TOTALYTD(
+    SUM('Housing Data'[purchase_price]),
+    'Housing Data'[date].[Date]
+  )
+```
+- YOY Sales Grow: Calculates the percentage change in total purchase price between the current and previous year.
+  *Used to assess annual growth trends and market momentum.*
+```Dax
+  YOY_Sales_Growth = 
+  VAR CurrYearSales = 
+      CALCULATE(
+          SUM('Housing Data'[purchase_price]),
+          YEAR('Housing Data'[date]) = YEAR(MAX('Housing Data'[date]))
+      )
+  VAR PrevYearSales = 
+      CALCULATE(
+          SUM('Housing Data'[purchase_price]),
+          YEAR('Housing Data'[date]) = YEAR(MAX('Housing Data'[date])) - 1
+      )
+  RETURN
+      IF(PrevYearSales <> 0, (CurrYearSales - PrevYearSales) / PrevYearSales, BLANK())
 ```
 ## Visualization
 - Donut Chart: Visualizes the average loan amount for high credit score customers segmented by marital Status and age group.
@@ -110,8 +144,6 @@ CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Da
   [View Linechart](images/Linechart.png)
 - Ribbon Chart: The ribbon chart visualizes the YTD loan amount across credit score bins, segmented by marital status, showing value distribution and rank           changes. YTD is dynamically calculated based on the latest year in the dataset.
   [View Ribbon_chart](images/Ribbon_chart.png)
-- Used a Decomposition Tree to analyze Loan Amount by Income Bracket and Employment Type, enabling interactive drilldowns and insights.
-  [View Decomposition-tree](images/Decomposition-tree.png)
   
 ## Key Insights
 - Unemployment drives the highest default rate (3.39%), making employment status a key risk indicator.
@@ -120,7 +152,7 @@ CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Da
   - Useful for forecasting and long-term risk planning.
 - Loan amounts are evenly distributed across purposes and age groups, with an average of approximately $127K.
   - Suggests consistent lending behavior across demographics. 
-- High credit score borrowers, especially married ones, receive the largest median loans and show better repayment, confirming credit scoring’s role in risk         segmentation.
+- High credit score borrowers, especially married ones, receive the largest median loans and show better repayment, confirming credit           scoring’s role in risk segmentation.
   - Supports credit-based loan prioritization. 
   
 ## Report Publishing
