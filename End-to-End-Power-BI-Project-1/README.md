@@ -61,8 +61,9 @@ CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Da
 
 ### Page 1: Loan Default Overview
 
+ ![Page1–loan-default-overview](Screenshots/page1-loan-default-overview.png)
+
 - Donut Chart: Visualizes the average loan amount for high credit score customers segmented by marital Status and age group.
-  ![Page1–loan-default-overview](Screenshots/page1-loan-default-overview.png)
 - Line Chart: Displays year-over-year changes in loan default rates.
    ![page2–adfp](Screenshots/page2-adfp.png)
 - Ribbon Chart: The ribbon chart visualizes the YTD loan amount across credit score bins, segmented by marital status, showing value distribution and rank           changes. YTD is dynamically calculated based on the latest year in the dataset.
