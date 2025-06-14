@@ -59,13 +59,13 @@ CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Da
 ```
 ## Visualization
 
-### Page 1: House Market Overview
+### Page 1: Loan Default Overview
 
 - Donut Chart: Visualizes the average loan amount for high credit score customers segmented by marital Status and age group.
   ![Page1–loan-default-overview](Screenshots/page1-loan-default-overview.png)
 - Line Chart: Displays year-over-year changes in loan default rates.
    ![page2–adfp](Screenshots/page2-adfp.png)
-- Ribbon Chart: The ribbon chart visualizes the YTD loan amount across credit score bins, segmented by marital status, showing value             distribution and rank changes. YTD is dynamically calculated based on the latest year in the dataset.
+- Ribbon Chart: The ribbon chart visualizes the YTD loan amount across credit score bins, segmented by marital status, showing value distribution and rank           changes. YTD is dynamically calculated based on the latest year in the dataset.
   ![page3–financial-risk-metrics](Screenshots/page3–financial-risk-metrics.png)
 - Used a Decomposition Tree to analyze Loan Amount by Income Bracket and Employment Type, enabling interactive drilldowns and insights.
 
@@ -77,11 +77,12 @@ CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Da
   - Useful for forecasting and long-term risk planning.
 - Loan amounts are evenly distributed across purposes and age groups, with an average of approximately $127K.
   - Suggests consistent lending behavior across demographics. 
-- High credit score borrowers, especially married ones, receive the largest median loans and show better repayment, confirming credit            scoring’s role in risk segmentation.
+- High credit score borrowers, especially married ones, receive the largest median loans and show better repayment, confirming credit scoring’s role in risk         segmentation.
   - Supports credit-based loan prioritization. 
   
 ## Report Publishing
 - Performed data validation to ensure accuracy and consistency of key metrics and calculated measures.
-- Enabled scheduled refresh for the Dataflow, configured incremental refresh, and published the report to Power BI Service with report-level     scheduled updates.
+- Enabled scheduled refresh for the Dataflow, configured incremental refresh, and published the report to Power BI Service with report-level scheduled updates.
+
 ## Conclusion
-This project demonstrates how data storytelling in Power BI can drive better decision-making in financial institutions.
+
