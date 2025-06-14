@@ -7,11 +7,9 @@
 - [Key Insights](#key-insights)
 - [Report Publishing](#report-publishing)
 ## Inventory Management Dashboard
-
 Designed a Power BI dashboard to analyze supply-demand trends in a retail inventory dataset. Integrated SQL Server and MySQL for data management, created DAX-based KPIs, and published a production-ready report.
 
 **Tools used:**
-
 ---
 
 | Tool         | Purpose                         |
@@ -35,7 +33,6 @@ Designed a Power BI dashboard to analyze supply-demand trends in a retail invent
 **Domain :** Retail
 
 ## Objective
-
 Developed an inventory dashboard in Power BI to simulate a real-world enterprise reporting system with a focus on clean, validated reporting workflow.
 -  Designing and validating the solution in a test environment
 -  Creating insightful KPIs and DAX measures for supply-demand monitoring
@@ -84,12 +81,26 @@ Total Supply Shortage = [Total Demand] - [Total Availability]
 - Total Profit: Calculates total value generated where availability met or exceeded demand, multiplied by unit price.
 
 ```Dax
-Total Profit = SUMX(FILTER('Availability/Demand Dataset','Availability/Demand Dataset'[Loss/Profit]>0),'Availability/Demand Dataset'[Loss/Profit]*'Availability/Demand Dataset'[unit_price])
+Total Profit = 
+SUMX(
+    FILTER(
+        'Availability/Demand Dataset',
+        'Availability/Demand Dataset'[Loss/Profit] > 0
+    ),
+    'Availability/Demand Dataset'[Loss/Profit] * 'Availability/Demand Dataset'[unit_price]
+)
 ```
 - Total Loss: Sums up the lost opportunity value where availability fell short of demand, indicating stockout impact.
 
 ```Dax
-Total Loss = SUMX(FILTER('Availability/Demand Dataset','Availability/Demand Dataset'[Loss/Profit]<0),'Availability/Demand Dataset'[Loss/Profit]*'Availability/Demand Dataset'[unit_price])*-1
+Total Loss = 
+SUMX(
+    FILTER(
+        'Availability/Demand Dataset',
+        'Availability/Demand Dataset'[Loss/Profit] < 0
+    ),
+    'Availability/Demand Dataset'[Loss/Profit] * 'Availability/Demand Dataset'[unit_price]
+) * -1
 ```
 - Average Loss Per Day: Determines the average loss per day due to supply shortages, helping evaluate recurring inefficiencies.
 
@@ -126,4 +137,12 @@ Avg Loss Per Day = DIVIDE('Measures 1'[Total Loss],'Measures 1'[Total Number of 
 ## Conclusion
 
 This project provided hands-on experience in building an end-to-end inventory dashboard using Power BI. It enhanced my skills in data cleaning, SQL-based data integration, DAX, and publishing reports — simulating a real-world reporting workflow and delivering key business insights.
+
+## What I learned
+- Applied SQL, DAX, and Power Query to build a fully functional Power BI dashboard.
+- Handled test and production data environments with source switching and validation.
+- Designed custom KPIs for tracking inventory gaps, profit, and loss.
+- Developed analytical thinking by identifying supply-demand gaps and uncovering key business insights from data.
+
+Thank You
 
