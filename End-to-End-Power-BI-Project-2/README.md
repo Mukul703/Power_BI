@@ -7,7 +7,7 @@
 - [Key Insights](#key-insights)
 - [Report Publishing](#report-publishing)
 - [Conclusion](#conclusion)
-- [What I Learned](#what i learned)
+- [What I Learned](#what-i-learned)
 ## Inventory Management Dashboard
 Designed a Power BI dashboard to analyze supply-demand trends in a retail inventory dataset. Integrated SQL Server and MySQL for data management, created DAX-based KPIs, and published a production-ready report.
 
