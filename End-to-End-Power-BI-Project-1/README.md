@@ -6,6 +6,7 @@
 - [Visualization](#visualization)
 - [Key Insights](#key-insights)
 - [Report Publishing](#report-publishing)
+- [Conclusion](#conclusion)
 ## Loan Default Analysis
 **Tools used :** Power BI Desktop, SQL Server Management Studio
 **Data Source :** Dataflow
