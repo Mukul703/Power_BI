@@ -150,5 +150,5 @@ This project provided hands-on experience in building an end-to-end inventory da
 - Designed custom KPIs for tracking inventory gaps, profit, and loss.
 - Developed analytical thinking by identifying supply-demand gaps and uncovering key business insights from data.
 
-Thank You
+Thanks for checking out this project!
 
