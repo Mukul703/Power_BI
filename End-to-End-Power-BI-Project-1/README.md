@@ -8,7 +8,17 @@
 - [Report Publishing](#report-publishing)
 - [Conclusion](#conclusion)
 ## Loan Default Analysis
-**Tools used :** Power BI Desktop, SQL Server Management Studio
+**Tools used :** 
+---
+
+| Tool         | Purpose                         |
+|--------------|---------------------------------|
+| Power BI Desktop     | Dashboard creation              |
+| SQL Server   | Data joins, cleaning, KPIs      |
+| DAX          | Measures & KPI logic            |
+| Power Query  | Data transformation & migration |
+
+---
 **Data Source :** Dataflow
 **Domain :** Banking
 ## Objective
