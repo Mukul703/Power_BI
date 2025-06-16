@@ -90,6 +90,7 @@ Highlights how age, marital status, dependents, and mortgage status impact loan 
 
 ### Page 3: Financial Risk Metrics
 This page evaluates key financial risk indicators, focusing on credit behavior, income levels, and employment types. It helps identify high-risk segments and monitor year-over-year loan and default trends.
+![Page3–financial-risk-metrics](Screenshots/page3-financial-risk-metrics.png)
 #### Ribbon Chart
 - Year-to-Date (YTD) Loan Amount segmented by Credit Score Bins and Marital Status to identify high-risk borrower profiles over time.
 #### Decomposition Tree
