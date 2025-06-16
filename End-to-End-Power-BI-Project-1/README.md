@@ -94,9 +94,8 @@ This page evaluates key financial risk indicators, focusing on credit behavior, 
 #### Ribbon Chart
 - Year-to-Date (YTD) Loan Amount segmented by Credit Score Bins and Marital Status to identify high-risk borrower profiles over time.
 #### Decomposition Tree
-- Breakdown of Total Loan Amount explained by Income Brackets (High, Medium, Low) and Employment Type (Self-Employed, Full-Time, Part-Time) for in-depth risk       assessment and financial profiling.
-
-  
+- Breakdown of Total Loan Amount explained by Income Brackets and Employment Type for in-depth risk assessment and financial profiling.
+ 
 ## Key Insights
 - Unemployment drives the highest default rate (3.39%), making employment status a key risk indicator.
   - Helps refine approval criteria based on job stability.
@@ -112,4 +111,18 @@ This page evaluates key financial risk indicators, focusing on credit behavior, 
 - Enabled scheduled refresh for the Dataflow, configured incremental refresh, and published the report to Power BI Service with report-level scheduled updates.
 
 ## Conclusion
+This Power BI report provides a clear view of loan default trends by analyzing key demographic and financial factors. It helps identify high-risk borrower profiles and supports data-driven decision-making to improve loan approvals and reduce default rates.
+
+## What I Learned
+- Connected SQL Server to Power BI using Dataflows for automated data import.
+- Cleaned and transformed data using Power Query with column profiling and type handling.
+- Created custom DAX measures for business KPIs, default rate analysis, and time intelligence.
+- Implemented scheduled and incremental refresh for Dataflows to optimize performance and ensure up-to-date reporting.
+- Designed interactive dashboards aligned with real-world banking scenarios for decision support.
+- Gained end-to-end experience in report development, publishing, and lifecycle management in Power BI Service.
+
+Thanks for checking out this!
+
+
+
 
