@@ -82,6 +82,7 @@ Provides a trend-based overview of default rates, loan purposes, and borrower pr
 
 ### Page 2: Applicant Demographics & Financial Profile
 Highlights how age, marital status, dependents, and mortgage status impact loan amounts and applicant profiles.
+![page2–adfp](Screenshots/page2-adfp.png)
 #### Donut Chart
 - Average Loan Amount (High Credit Score) segmented by Age Groups and Marital Status to reveal borrowing patterns across different demographics.
 #### Clustered Column Chart 
