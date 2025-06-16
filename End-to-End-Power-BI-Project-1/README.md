@@ -74,7 +74,7 @@ CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Da
  ![Page1–loan-default-overview](Screenshots/page1-loan-default-overview.png)
 
 #### 📉 Line Chart 
-- Line Chart - **Default Rate (%) by Year**: Displays the change in default rate from 2013 to 2018. Helps track yearly trends and risk fluctuations. 
+- **Line Chart - Default Rate (%) by Year**: Displays the change in default rate from 2013 to 2018. Helps track yearly trends and risk fluctuations. 
 - **Loan Amount by Purpose**: Trend of loan distribution across different purposes.
 - **Default Rate by Employment Type**: Default rate variation by employment type over time.
 - **Average Loan Amount by Age Group**: Loan amount trends across age groups.
