@@ -47,7 +47,7 @@ CALCULATE(
 
 ## Visualization
 - **Line Chart – Sales Trend Over Years**: Displays annual sales and profit progression from 2020 to 2024 to highlight peak and low-performing years.
-
+![Sales-Trend-By-Periods](Scr/Sales-Trend-By-Periods.png)
 - **Bar Charts – Top/Bottom 5 Products**: Visualizes best and worst performers by Sales, Profit, and Quantity to aid inventory and pricing decisions.
 - **Scatter Chart – Profit vs Net Sales**:   Shows the relationship between net sales and profit to analyze product-level profitability.
 - **Slicers – Product, Date, Promotion, Customer**: Enables interactive filtering for detailed exploration of metrics.  
