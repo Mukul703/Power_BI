@@ -42,6 +42,8 @@ CALCULATE(
     USERELATIONSHIP('Date Table 2'[Date], 'Fact Table'[Date (dd/mm/yyyy)])
 )
 ```
+## Visualization
+
 ## Key Insights
 - Apple iPhone 14 and MacBook Air were top performers in both sales and profit.
 - Analyzed time-based sales trend showing 400% growth from 2020 to 2022.
