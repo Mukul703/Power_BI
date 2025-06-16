@@ -51,6 +51,7 @@ CALCULATE(
 - **Bar Charts – Top/Bottom 5 Products**: Visualizes best and worst performers by Sales, Profit, and Quantity to aid inventory and pricing decisions.
 ![Top-Bottom-Analysis](Scr/Top-Bottom-Analysis.png)
 - **Scatter Chart – Profit vs Net Sales**:   Shows the relationship between net sales and profit to analyze product-level profitability.
+![profit-vs-net-sales](Scr/profit-vs-net-sales.png)
 - **Slicers – Product, Date, Promotion, Customer**: Enables interactive filtering for detailed exploration of metrics.  
 
 ## Key Insights
