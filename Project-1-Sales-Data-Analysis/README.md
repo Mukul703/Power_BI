@@ -8,9 +8,11 @@ Analyzing sales data to identify top/bottom products, analyze trends, compare pe
 
 ## Data Preparation
 Imported data from Excel containing customer orders, product details, and promotions. Cleaned and transformed the data using Power Query Editor.
+
 ## Custom Column Created
 - Calculated Net Sales, Profit, and Discount Percentage columns using simple formulas during data transformation.
 - Added a Year column from the date for trend analysis.
+
 ## DAX Measures for Key Business Metrics
 - **Sum of Net Sales:** Calculates total Net Sales using an alternate date filter.
 Used to compare sales across custom time periods by activating an inactive date relationship.
@@ -42,7 +44,13 @@ CALCULATE(
     USERELATIONSHIP('Date Table 2'[Date], 'Fact Table'[Date (dd/mm/yyyy)])
 )
 ```
+
 ## Visualization
+- **Line Chart – Sales Trend Over Years**: Displays annual sales and profit progression from 2020 to 2024 to highlight peak and low-performing years.
+
+- **Bar Charts – Top/Bottom 5 Products**: Visualizes best and worst performers by Sales, Profit, and Quantity to aid inventory and pricing decisions.
+- **Scatter Chart – Profit vs Net Sales**:   Shows the relationship between net sales and profit to analyze product-level profitability.
+- **Slicers – Product, Date, Promotion, Customer**: Enables interactive filtering for detailed exploration of metrics.  
 
 ## Key Insights
 - Apple iPhone 14 and MacBook Air were top performers in both sales and profit.
