@@ -74,11 +74,11 @@ Provides a trend-based overview of default rates, loan purposes, and borrower pr
  ![Page1–loan-default-overview](Screenshots/page1-loan-default-overview.png)
 
 #### Line Chart 
-- **Default Rate (%) by Year**: Displays the change in default rate from 2013 to 2018. Helps track yearly trends and risk fluctuations. 
 - **Loan Amount by Purpose**: Trend of loan distribution across different purposes.
+- **Average Income by Employment Type**: Income trends for different employment types.
 - **Default Rate by Employment Type**: Default rate variation by employment type over time.
 - **Average Loan Amount by Age Group**: Loan amount trends across age groups.
-- **Average Income by Employment Type**: Income trends for different employment types.
+- **Default Rate (%) by Year**: Displays the change in default rate from 2013 to 2018. Helps track yearly trends and risk fluctuations. 
 
 ### Page 2: Applicant Demographics & Financial Profile
 Highlights how age, marital status, dependents, and mortgage status impact loan amounts and applicant profiles.
