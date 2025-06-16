@@ -70,20 +70,29 @@ CALCULATE(SUM('Loan Dataset'[LoanAmount]),DATESYTD('Loan Dataset'[Loan_Date].[Da
 ## Visualization
 
 ### Page 1: Loan Default Overview
-
+Provides a trend-based overview of default rates, loan purposes, and borrower profiles by age and employment type to support risk analysis.
  ![Page1–loan-default-overview](Screenshots/page1-loan-default-overview.png)
 
-#### 📉 Line Chart 
-- **Line Chart - Default Rate (%) by Year**: Displays the change in default rate from 2013 to 2018. Helps track yearly trends and risk fluctuations. 
+#### Line Chart 
+- **Default Rate (%) by Year**: Displays the change in default rate from 2013 to 2018. Helps track yearly trends and risk fluctuations. 
 - **Loan Amount by Purpose**: Trend of loan distribution across different purposes.
 - **Default Rate by Employment Type**: Default rate variation by employment type over time.
 - **Average Loan Amount by Age Group**: Loan amount trends across age groups.
 - **Average Income by Employment Type**: Income trends for different employment types.
 
 ### Page 2: Applicant Demographics & Financial Profile
+Highlights how age, marital status, dependents, and mortgage status impact loan amounts and applicant profiles.
+#### Donut Chart
+- Average Loan Amount (High Credit Score) segmented by Age Groups and Marital Status to reveal borrowing patterns across different demographics.
+#### Clustered Column Chart 
+- Distribution of Loan Applicants (Middle Age) based on Mortgage Ownership and Number of Dependents to highlight financial responsibilities influencing loan        behavior.
 
-
-### Page 3: Financial Risk  Metrics
+### Page 3: Financial Risk Metrics
+This page evaluates key financial risk indicators, focusing on credit behavior, income levels, and employment types. It helps identify high-risk segments and monitor year-over-year loan and default trends.
+#### Ribbon Chart
+- Year-to-Date (YTD) Loan Amount segmented by Credit Score Bins and Marital Status to identify high-risk borrower profiles over time.
+#### Decomposition Tree
+- Breakdown of Total Loan Amount explained by Income Brackets (High, Medium, Low) and Employment Type (Self-Employed, Full-Time, Part-Time) for in-depth risk       assessment and financial profiling.
 
   
 ## Key Insights
