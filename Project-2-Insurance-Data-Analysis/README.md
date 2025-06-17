@@ -32,8 +32,7 @@ To analyze insurance policies, claims, and customer feedback to identify claim p
 
 ## Visualization
 ### Page 1: Insurance Portfolio Overview
-
-![Page 1](Pictures/page-1.png)
+![page3–house-type-analysis](images/page3-house-type-analysis.png)
 
 - **Card Visuals**: Premium Amount, Coverage Amount, Claim Amount.  
 - **Multi-row Card**: Total number of Male and Female customers using `Gender` field.
