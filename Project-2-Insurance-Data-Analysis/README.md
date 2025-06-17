@@ -1,7 +1,7 @@
 ## Insurance Data Analysis 
 This is an end-to-end business intelligence project built in Power BI to analyze insurance policies, claims, and customer feedback. The project demonstrates SQL integration, data modeling, DAX, sentiment analysis, RLS implementation, and deployment to Power BI Service.
 
-**Tools used :**
+**Tools used**
 ---
 
 | Tool             | Purpose                                                                 |
@@ -9,12 +9,18 @@ This is an end-to-end business intelligence project built in Power BI to analyze
 | Power BI Desktop | Data modeling, creating visuals, and designing interactive dashboards   |
 | SQL Server       | Importing raw CSV, data storage, relational joins, and data preparation |
 | Power Query      | Data cleaning, transformation, and creating custom calculated columns   |
-| DAX              | Building business logic with measures (e.g., total claims, approval rate)|
 | Power BI Service | Report publishing, RLS setup, dashboard creation, and scheduled refresh |
 | Text Analytics   | Performing sentiment analysis on customer feedback in Power Query       |
 
 ---
-**Domain :** Insurance 
+**Data Source**
+- **Raw File:** `InsuranceData.csv` – Contains policy, customer, and claim details.
+- **Feedback File:** `InsuranceCustomerFeedback.xlsx` – Customer comments for sentiment analysis.
+- **Staging:** Both files were imported into **SQL Server** for structured joins and processing.
+- **Final Load:** Connected SQL Server tables to **Power BI Desktop**.
+  
+**Domain** Insurance 
+
 ## Objective
 To analyze insurance policies, claims, and customer feedback to identify claim patterns, segment risks, track business KPIs, and evaluate customer satisfaction using Power BI.
 
@@ -24,10 +30,8 @@ To analyze insurance policies, claims, and customer feedback to identify claim p
 - Merged and cleaned customer feedback data from Excel.  
 - Performed sentiment scoring using **Text Analytics** in Power Query.
 
-## Custom Column Created
-
-
 ## Visualization
+### Page 1: Insurance Portfolio Overview
 - **Card Visuals**: Premium Amount, Coverage Amount, Claim Amount.  
 - **Multi-row Card**: Total number of Male and Female customers using `Gender` field.
 - **Ribbon Chart**: Count of Claim Status across Settled, Rejected, and Pending.  
@@ -35,7 +39,15 @@ To analyze insurance policies, claims, and customer feedback to identify claim p
 - **Line Chart**: Sum of Claim Amount by Age Group.  
 - **Matrix Visual**: Policy-wise claims breakdown.  
 - **Donut Chart**: Claim Distribution across statuses.  
-- **Slicers**: Enabled for Policy Number, Customer ID, Claim Number. 
+- **Slicers**: Enabled for Policy Number, Customer ID, Claim Number.
+
+### Page2: Detailed Policy & Claim View
+- **Table Visual**: Displays detailed policy and claim records with drillthrough support.
+
+### Page3: Feedback & Sentiment Analysis
+- **Word Cloud**: Highlights frequently used keywords from customer feedback.  
+- **Bar Chart**: Shows count of customer feedback by sentiment classification (Good vs Needs Improvement).  
+- **Table Visual**: Displays customer name, sentiment score, and feedback text for detailed review.
 
 ## Key Insights
 - Travel Insurance leads in total claim amount.
