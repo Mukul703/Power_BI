@@ -1,64 +1,55 @@
 ## Insurance Data Analysis 
-**Tools used :** Power BI Desktop, Excel, SQL Server 
+**Tools used :**
+---
 
+| Tool             | Purpose                                                                 |
+|------------------|-------------------------------------------------------------------------|
+| Power BI Desktop | Data modeling, creating visuals, and designing interactive dashboards   |
+| SQL Server       | Importing raw CSV, data storage, relational joins, and data preparation |
+| Power Query      | Data cleaning, transformation, and creating custom calculated columns   |
+| DAX              | Building business logic with measures (e.g., total claims, approval rate)|
+| Power BI Service | Report publishing, RLS setup, dashboard creation, and scheduled refresh |
+| Text Analytics   | Performing sentiment analysis on customer feedback in Power Query       |
+
+---
 **Domain :** Insurance 
-
 ## Objective
-Analyzing sales data to identify top/bottom products, analyze trends, compare performance, and calculate various metrics. 
+To analyze insurance policies, claims, and customer feedback to identify claim patterns, segment risks, track business KPIs, and evaluate customer satisfaction using Power BI.
 
 ## Data Preparation
-Imported data from Excel containing customer orders, product details, and promotions. Cleaned and transformed the data using Power Query Editor.
+- Applied data profiling and transformation in Power Query Editor.  
+- Created conditional columns including **Age Group Bins** for demographic insights.  
+- Merged and cleaned customer feedback data from Excel.  
+- Performed sentiment scoring using **Text Analytics** in Power Query.
 
 ## Custom Column Created
-- Calculated Net Sales, Profit, and Discount Percentage columns using simple formulas during data transformation.
-- Added a Year column from the date for trend analysis.
 
-## DAX Measures for Key Business Metrics
-- **Sum of Net Sales:** Calculates total Net Sales using an alternate date filter.
-Used to compare sales across custom time periods by activating an inactive date relationship.
-```Dax
-Sum of Net Sales = 
-CALCULATE(
-    SUM('Fact Table'[Net Sales]),
-    ALL('Date Table 1'), // Removes filter from Date Table 1 for comparison
-    USERELATIONSHIP('Date Table 2'[Date], 'Fact Table'[Date (dd/mm/yyyy)]) // Activates inactive relationship for custom date comparison
-)
-```
-- **Total Profit:** Calculates total profit using an alternate date context.
-Used to analyze profit across user-selected periods by activating a secondary date relationship.
-```Dax
-Total Profit = 
-CALCULATE(
-    SUM('Fact Table'[Profit]),
-    ALL('Date Table 1'),
-    USERELATIONSHIP('Date Table 2'[Date], 'Fact Table'[Date (dd/mm/yyyy)])
-)
-```
-- **Total Quantity:** Calculates total units sold using an alternate date filter.
-Used to compare quantities sold between two user-defined time periods using inactive relationship logic.
-```Dax
-Total Quantity = 
-CALCULATE(
-    SUM('Fact Table'[Units Sold]),
-    ALL('Date Table 1'),
-    USERELATIONSHIP('Date Table 2'[Date], 'Fact Table'[Date (dd/mm/yyyy)])
-)
-```
 
 ## Visualization
-- **Line Chart – Sales Trend Over Years**: Displays annual sales and profit progression from 2020 to 2024 to highlight peak and low-performing years.
+- **Card Visuals**: Premium Amount, Coverage Amount, Claim Amount.  
+- **Multi-row Card**: Total number of Male and Female customers using `Gender` field.
+- **Ribbon Chart**: Count of Claim Status across Settled, Rejected, and Pending.  
+- **Bar Chart**: Premium Amount by Policy Type.  
+- **Line Chart**: Sum of Claim Amount by Age Group.  
+- **Matrix Visual**: Policy-wise claims breakdown.  
+- **Donut Chart**: Claim Distribution across statuses.  
+- **Slicers**: Enabled for Policy Number, Customer ID, Claim Number. 
 ![Sales-Trend-By-Periods](Scr/Sales-Trend-By-Periods.png)
-- **Bar Charts – Top/Bottom 5 Products**: Visualizes best and worst performers by Sales, Profit, and Quantity to aid inventory and pricing decisions.
-![Top-Bottom-Analysis](Scr/Top-Bottom-Analysis.png)
-- **Scatter Chart – Profit vs Net Sales**: Shows the relationship between net sales and profit to analyze product-level profitability.
-![profit-vs-net-sales](Scr/profit-vs-net-sales.png)
-- **Slicers – Product, Date, Promotion, Customer**: Enables interactive filtering for detailed exploration of metrics.  
+
+## Security & Filters  
+- **Drillthrough Filter**: Enabled on `Policy Type` from Page 1 → Page 2 Table.  
+- **Role-Level Security (RLS)**:  
+  - Created roles for Policy Managers (Travel, Health) in Power BI Desktop  
+  - Tested using **"View as Role"** and also in **Power BI Service**
 
 ## Key Insights
-- Apple iPhone 14 and MacBook Air were top performers in both sales and profit.
-- Analyzed time-based sales trend showing 400% growth from 2020 to 2022.
-- Revealed 80% of discounts came from Clearance & Weekend Flash Sale.
+- Travel Insurance leads in total claim amount.
+- 58% policies are active, with 53% overall claim approval rate.
+- Customer sentiment is largely positive, with keywords like "support", "coverage", and "quick".
+
 ## Report Publishing
-Prepared and presented the dashboard in Power BI Desktop for internal analysis use. 
+
+
 ## Conclusion
-This project helped explore and communicate business trends effectively through visual analytics, focusing on product and promotion performance.
+This end-to-end project demonstrated how to integrate SQL, Excel, and Power BI for enterprise-level insurance reporting.  
+It covers technical aspects like RLS, scheduled refresh, drillthrough, and sentiment analytics, making it both data-rich and business-relevant.
