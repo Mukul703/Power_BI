@@ -1,4 +1,6 @@
 ## Insurance Data Analysis 
+This is an end-to-end business intelligence project built in Power BI to analyze insurance policies, claims, and customer feedback. The project demonstrates SQL integration, data modeling, DAX, sentiment analysis, RLS implementation, and deployment to Power BI Service.
+
 **Tools used :**
 ---
 
@@ -34,13 +36,6 @@ To analyze insurance policies, claims, and customer feedback to identify claim p
 - **Matrix Visual**: Policy-wise claims breakdown.  
 - **Donut Chart**: Claim Distribution across statuses.  
 - **Slicers**: Enabled for Policy Number, Customer ID, Claim Number. 
-![Sales-Trend-By-Periods](Scr/Sales-Trend-By-Periods.png)
-
-## Security & Filters  
-- **Drillthrough Filter**: Enabled on `Policy Type` from Page 1 → Page 2 Table.  
-- **Role-Level Security (RLS)**:  
-  - Created roles for Policy Managers (Travel, Health) in Power BI Desktop  
-  - Tested using **"View as Role"** and also in **Power BI Service**
 
 ## Key Insights
 - Travel Insurance leads in total claim amount.
@@ -48,7 +43,17 @@ To analyze insurance policies, claims, and customer feedback to identify claim p
 - Customer sentiment is largely positive, with keywords like "support", "coverage", and "quick".
 
 ## Report Publishing
+- Published the report to **Power BI Service**.  
+- Created a **dashboard** from report pages.  
+- Configured **Scheduled Refresh** using Semantic Model:  
+  - Installed and configured **Data Gateway**  
+  - Set up credentials and refresh frequency.
 
+## Security & Filters  
+- **Drillthrough Filter**: Enabled on `Policy Type` from Page 1 → Page 2 Table.  
+- **Role-Level Security (RLS)**:  
+  - Created roles for Policy Managers (Travel, Health) in Power BI Desktop  
+  - Tested using **"View as Role"** and also in **Power BI Service**
 
 ## Conclusion
 This end-to-end project demonstrated how to integrate SQL, Excel, and Power BI for enterprise-level insurance reporting.  
