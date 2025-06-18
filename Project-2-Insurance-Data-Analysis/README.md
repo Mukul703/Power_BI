@@ -43,7 +43,7 @@ To analyze insurance policies, claims, and customer feedback to identify claim p
 - **Slicers**: Enabled for Policy Number, Customer ID, Claim Number.
 
 ### Page2: Detailed Policy & Claim View
-![Page 2](images/Page-2.png)
+![Page 2](images/page-2.png)
 - **Table Visual**: Displays detailed policy and claim records with drillthrough support.
 
 ### Page3: Feedback & Sentiment Analysis
