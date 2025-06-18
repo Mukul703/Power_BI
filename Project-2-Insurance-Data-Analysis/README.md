@@ -47,7 +47,7 @@ To analyze insurance policies, claims, and customer feedback to identify claim p
 - **Table Visual**: Displays detailed policy and claim records with drillthrough support.
 
 ### Page3: Feedback & Sentiment Analysis
-![Page 3](images/page-3.png)
+![Page 3](images/Page-3.png)
 - **Word Cloud**: Highlights frequently used keywords from customer feedback.  
 - **Bar Chart**: Shows count of customer feedback by sentiment classification (Good vs Needs Improvement).  
 - **Table Visual**: Displays customer name, sentiment score, and feedback text for detailed review.
