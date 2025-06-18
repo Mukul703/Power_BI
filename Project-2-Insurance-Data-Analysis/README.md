@@ -19,7 +19,7 @@ This is an end-to-end business intelligence project built in Power BI to analyze
 - **Staging:** Both files were imported into **SQL Server** for structured joins and processing.
 - **Final Load:** Connected SQL Server tables to **Power BI Desktop**.
   
-**Domain** Insurance 
+**Domain:** Insurance 
 
 ## Objective
 To analyze insurance policies, claims, and customer feedback to identify claim patterns, segment risks, track business KPIs, and evaluate customer satisfaction using Power BI.
