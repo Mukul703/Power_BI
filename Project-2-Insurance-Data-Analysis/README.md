@@ -32,7 +32,7 @@ To analyze insurance policies, claims, and customer feedback to identify claim p
 
 ## Visualization
 ### Page 1: Insurance Portfolio Overview
-![Page 1](images/page1.png)
+![page1](images/page1.png)
 - **Card Visuals**: Premium Amount, Coverage Amount, Claim Amount.  
 - **Multi-row Card**: Total number of Male and Female customers using `Gender` field.
 - **Ribbon Chart**: Count of Claim Status across Settled, Rejected, and Pending.  
