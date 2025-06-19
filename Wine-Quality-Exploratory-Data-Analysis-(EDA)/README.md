@@ -57,7 +57,7 @@ This project presents a detailed **Exploratory Data Analysis (EDA)** of the Wine
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/wine-quality-eda.git
+   git clone https://github.com/Mukul703/wine-quality-eda.git
    cd wine-quality-eda
 
 2. Open the notebook:
