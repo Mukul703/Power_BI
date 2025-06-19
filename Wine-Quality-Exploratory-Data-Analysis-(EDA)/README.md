@@ -28,26 +28,35 @@ This project presents a detailed **Exploratory Data Analysis (EDA)** of the Wine
 
 ## 📊 Exploratory Data Analysis
 
-### 1. 🧼 Data Preprocessing
+### Data Preprocessing
 - Inspected data structure using `.info()` and `.describe()`
 - Checked for missing values – **None found**
 - Identified and removed **240 duplicate rows**
 - Reviewed value distribution for the `quality` variable
 
-### 2. 📉 Univariate Analysis
+### Univariate Analysis
 - Plotted **histograms** with KDE to understand feature distributions
 - Detected **skewness** in features like `residual sugar` and `sulphates`
 
-### 3. 🔗 Correlation Analysis
+### Correlation Analysis
 - Created a **correlation matrix heatmap**
 - Found strong positive correlation between `alcohol` and `quality`
 - Observed negative correlation between `volatile acidity` and `quality`
 
-### 4. 📈 Bivariate & Multivariate Analysis
+### Bivariate & Multivariate Analysis
 - Used **pairplots** to explore feature interactions
 - **Boxplots** and **scatter plots** for quality vs. key features
 - Visualized class imbalance using bar plots
 
 ---
+---
 
+## 🔍 Key Insights
+
+- **Alcohol** is the most positively correlated factor with wine quality  
+- Wines with **lower volatile acidity** tend to receive higher ratings  
+- The dataset is **imbalanced**, with most wines rated 5 or 6  
+- Some features may benefit from scaling or transformation in modeling
+
+---
 
