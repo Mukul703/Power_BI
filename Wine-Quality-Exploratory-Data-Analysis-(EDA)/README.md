@@ -43,7 +43,7 @@ This project presents a detailed **Exploratory Data Analysis (EDA)** of the Wine
 
 ### Bivariate & Multivariate Analysis
 - Used **pairplots** to explore feature interactions
-- **Boxplots** and **scatter plots** for quality vs. key features
+- **Boxplots** and **scatter plots** for quality vs. key features  ![boxplot](visualisation/boxplot.png)
 - Visualized class imbalance using bar plots
 
 ## Key Insights
