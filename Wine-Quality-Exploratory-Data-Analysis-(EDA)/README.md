@@ -53,5 +53,15 @@ This project presents a detailed **Exploratory Data Analysis (EDA)** of the Wine
 - The dataset is **imbalanced**, with most wines rated 5 or 6  
 - Some features may benefit from scaling or transformation in modeling
 
+## 🚀 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/wine-quality-eda.git
+   cd wine-quality-eda
+2. Open the notebook:
+- Use Jupyter Notebook
+  ```bash
+  jupyter notebook
 
 
