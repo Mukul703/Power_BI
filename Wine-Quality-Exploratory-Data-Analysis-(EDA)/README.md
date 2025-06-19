@@ -37,7 +37,7 @@ This project presents a detailed **Exploratory Data Analysis (EDA)** of the Wine
 - Detected **skewness** in features like `residual sugar` and `sulphates`
 
 ### Correlation Analysis
-- Created a **correlation matrix heatmap**
+- Created a **correlation matrix heatmap** ![Heatmap](visualisation/Heatmap.png)
 - Found strong positive correlation between `alcohol` and `quality`
 - Observed negative correlation between `volatile acidity` and `quality`
 
