@@ -24,7 +24,7 @@ This project presents a detailed **Exploratory Data Analysis (EDA)** of the Wine
 - Visualize data distributions and relationships
 - Address data quality issues such as duplicates and imbalance
 
-## 📊 Exploratory Data Analysis
+## Exploratory Data Analysis
 
 ### Data Preprocessing
 - Inspected data structure using `.info()` and `.describe()`
@@ -46,22 +46,26 @@ This project presents a detailed **Exploratory Data Analysis (EDA)** of the Wine
 - **Boxplots** and **scatter plots** for quality vs. key features
 - Visualized class imbalance using bar plots
 
-## 🔍 Key Insights
+## Key Insights
 
 - **Alcohol** is the most positively correlated factor with wine quality  
 - Wines with **lower volatile acidity** tend to receive higher ratings  
 - The dataset is **imbalanced**, with most wines rated 5 or 6  
 - Some features may benefit from scaling or transformation in modeling
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/wine-quality-eda.git
    cd wine-quality-eda
+
 2. Open the notebook:
 - Use Jupyter Notebook
   ```bash
   jupyter notebook
+Then open 1.0-WinequalityEDA.ipynb in your browser.
+- Or open the notebook in Visual Studio Code with the Jupyter extension.
 
+3. Run all cells sequentially to reproduce the analysis.
 
