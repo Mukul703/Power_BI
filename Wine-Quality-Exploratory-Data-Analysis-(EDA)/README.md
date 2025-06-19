@@ -33,7 +33,7 @@ This project presents a detailed **Exploratory Data Analysis (EDA)** of the Wine
 - Reviewed value distribution for the `quality` variable
 
 ### Univariate Analysis
-- Plotted **histograms** with KDE to understand feature distributions ![Heatmap](visualisation/Heatmap.png)
+- Plotted **histograms** with KDE to understand feature distributions ![histogram-with-kde-plot](visualisation/histogram-with-kde-plot.png)
 - Detected **skewness** in features like `residual sugar` and `sulphates`
 
 ### Correlation Analysis
