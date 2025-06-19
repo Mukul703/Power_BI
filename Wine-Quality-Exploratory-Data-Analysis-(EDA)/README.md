@@ -24,8 +24,6 @@ This project presents a detailed **Exploratory Data Analysis (EDA)** of the Wine
 - Visualize data distributions and relationships
 - Address data quality issues such as duplicates and imbalance
 
----
-
 ## 📊 Exploratory Data Analysis
 
 ### Data Preprocessing
@@ -48,9 +46,6 @@ This project presents a detailed **Exploratory Data Analysis (EDA)** of the Wine
 - **Boxplots** and **scatter plots** for quality vs. key features
 - Visualized class imbalance using bar plots
 
----
----
-
 ## 🔍 Key Insights
 
 - **Alcohol** is the most positively correlated factor with wine quality  
@@ -58,5 +53,5 @@ This project presents a detailed **Exploratory Data Analysis (EDA)** of the Wine
 - The dataset is **imbalanced**, with most wines rated 5 or 6  
 - Some features may benefit from scaling or transformation in modeling
 
----
+
 
