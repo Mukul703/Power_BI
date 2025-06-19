@@ -47,6 +47,8 @@ This project presents a detailed **Exploratory Data Analysis (EDA)** of the Wine
 - Used **pairplots** to explore feature interactions
 - **Boxplots** and **scatter plots** for quality vs. key features
 ![boxplot](visualisation/boxplot.png)
+
+![scatterplot](visualisation/scatterplot.png)
 - Visualized class imbalance using bar plots
 
 ## Key Insights
