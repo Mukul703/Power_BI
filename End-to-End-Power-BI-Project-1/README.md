@@ -7,6 +7,7 @@
 - [Key Insights](#key-insights)
 - [Report Publishing](#report-publishing)
 - [Conclusion](#conclusion)
+- [What I Learned](#what-i-learned)
 ## Loan Default Analysis
 **Tools used :** 
 ---
