@@ -20,7 +20,7 @@ Analyzing sales data to identify top/bottom products, analyze trends, compare pe
 ## Data Preparation
 Imported data from Excel containing customer orders, product details, and promotions. Cleaned and transformed the data using Power Query Editor.
 
-## Custom Column Created
+## Custom Columns Created
 - Calculated Net Sales, Profit, and Discount Percentage columns using simple formulas during data transformation.
 - Added a Year column from the date for trend analysis.
 
