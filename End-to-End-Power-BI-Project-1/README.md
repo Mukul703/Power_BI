@@ -15,7 +15,7 @@
 | Tool         | Purpose                         |
 |--------------|---------------------------------|
 | Power BI Desktop     | Dashboard creation              |
-| SQL Server   | Data joins, cleaning, KPIs      |
+| SQL Server   | Data joins, cleaning      |
 | DAX          | Measures & KPI logic            |
 | Power Query  | Data transformation & migration |
 
