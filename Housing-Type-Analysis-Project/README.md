@@ -147,7 +147,7 @@ A high-level dashboard showcasing key housing market insights.
 ### Page 2: Sales Performance
 Analyzes sales volume, pricing drivers, and regional efficiency metrics.
 
-![Page2–sales-performance](images/page2-sales-performance.png)
+<img width="1322" height="741" alt="Image" src="https://github.com/user-attachments/assets/97d99ac3-4392-42db-a5bf-0d34e2536942" />
 
 **Visuals:**
 - **Stacked Bar Chart – Sales by Region**: Compares total sales volume across regions.
