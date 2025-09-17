@@ -27,6 +27,7 @@ This is an end-to-end business intelligence project built using Power BI, showca
 
 **Data Source :** 
 - **Google BigQuery** (connected to Power BI)
+  https://console.cloud.google.com/bigquery?ws=!1m7!1m6!12m5!1m3!1snice-plexus-459412-r7!2sus-central1!3sf8469fad-b065-4c85-8e0f-222624fc4692!2e1
 - Original CSV file: `Housing Data.csv`
 
 **Domain :** Real Estate Analytics
